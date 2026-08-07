@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Used Robots & Spare Parts — Teach Pendants, Motors, Reducers | HH Industrial</title>
+<meta name="description" content="HH Industrial supplies inspected used industrial robots and genuine spare parts — teach pendants, servo motors, reducers — for FANUC, ABB, KUKA, and Yaskawa systems.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14181C; --panel:#20262C; --paper:#ECE9E2;
+    --line:#4A535C; --line-soft:#333B42;
+    --orange:#E8792A; --teal:#2E8C82;
+    --text-light:#F2F1EC; --text-dim:#9AA3AB;
+  }
+  body{background:var(--paper); font-family:'Inter',sans-serif; color:var(--ink);}
+  .font-display{font-family:'Archivo',sans-serif;}
+  .font-mono{font-family:'IBM Plex Mono',monospace;}
+  .bg-ink{background-color:var(--ink);} .bg-panel{background-color:var(--panel);}
+  .text-orange{color:var(--orange);} .text-teal{color:var(--teal);}
+  .bg-orange{background-color:var(--orange);}
+  .border-line-soft{border-color:var(--line-soft);}
+  .text-dim{color:var(--text-dim);} .text-light{color:var(--text-light);}
+</style>
+</head>
+<body class="antialiased">
+
+  <header class="bg-ink text-light border-b border-line-soft">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+      <div class="font-mono text-[10px] tracking-widest text-dim">
+        <a href="/" class="font-display font-bold text-sm text-light tracking-tight block">HH INDUSTRIAL</a>
+        USED ROBOTS &amp; SPARE PARTS
+      </div>
+      <a href="#quote" class="font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">GET A QUOTE →</a>
+    </div>
+  </header>
+
+  <section class="bg-ink text-light py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">FAST TURNAROUND · MODEL-MATCHED PARTS</div>
+      <h1 class="font-display font-extrabold text-4xl leading-tight mb-6">Down machine? Find your part fast.</h1>
+      <p class="text-dim text-lg leading-relaxed max-w-2xl mx-auto">
+        Teach pendants, servo motors, reducers, and inspected used robot arms — sourced and
+        matched to your exact model, with lead time and stock status confirmed before you buy.
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 py-20">
+    <div class="grid sm:grid-cols-2 gap-8">
+      <div class="bg-white p-8 border border-black/10">
+        <div class="font-mono text-xs text-orange mb-3">USED ROBOTS</div>
+        <h3 class="font-display font-bold text-lg mb-2">Inspected &amp; Tested Arms</h3>
+        <p class="text-sm text-black/60 leading-relaxed">FANUC, ABB, KUKA, and Yaskawa robot arms, inspected and functionally tested before listing.</p>
+      </div>
+      <div class="bg-white p-8 border border-black/10">
+        <div class="font-mono text-xs text-orange mb-3">SPARE PARTS</div>
+        <h3 class="font-display font-bold text-lg mb-2">Teach Pendants, Motors, Reducers</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Model-matched components to get your line back up — tell us the part number or model, we'll confirm fit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" class="bg-panel text-light py-20">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="font-display font-bold text-2xl mb-4">What do you need?</h2>
+      <p class="text-dim mb-8">Give us the model or part number — we'll confirm availability and price fast.</p>
+
+      <!-- FORM BACKEND: Web3Forms — replace access_key before publishing -->
+      <form action="https://api.web3forms.com/submit" method="POST" class="grid sm:grid-cols-2 gap-4 text-left">
+        <input type="hidden" name="access_key" value="66b62667-4daa-4650-a2d6-c97d8010fbdd">
+        <input type="hidden" name="subject" value="New inquiry — Used Robots / Spare Parts">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+        <div>
+          <label class="font-mono text-xs tracking-widest text-dim block mb-2">NAME *</label>
+          <input type="text" name="name" required class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition">
+        </div>
+        <div>
+          <label class="font-mono text-xs tracking-widest text-dim block mb-2">EMAIL *</label>
+          <input type="email" name="email" required class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition">
+        </div>
+        <div class="sm:col-span-2">
+          <label class="font-mono text-xs tracking-widest text-dim block mb-2">PART / MODEL NUMBER</label>
+          <input type="text" name="part_number" class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition" placeholder="e.g. teach pendant, servo motor model, robot model">
+        </div>
+        <div class="sm:col-span-2">
+          <label class="font-mono text-xs tracking-widest text-dim block mb-2">DETAILS</label>
+          <textarea name="message" rows="3" class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition resize-none"></textarea>
+        </div>
+        <div class="sm:col-span-2">
+          <button type="submit" class="w-full bg-orange text-ink font-display font-bold py-4 hover:brightness-110 transition">Send Request</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-ink text-dim py-10 border-t border-line-soft">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between gap-4 items-center">
+      <div>
+        <div class="font-display font-bold text-light text-sm">HH Industrial</div>
+        <div class="font-mono text-[11px] tracking-widest mt-1">Your Trusted Global Industrial Automation Partner</div>
+      </div>
+      <div class="font-mono text-[11px] tracking-widest text-right">USED ROBOTS &amp; SPARE PARTS<br>[CITY, COUNTRY] · [EMAIL]</div>
+    </div>
+  </footer>
+
+</body>
+</html>
