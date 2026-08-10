@@ -20,6 +20,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
 <style>
   :root{
     --ink:#14181C; --panel:#20262C; --paper:#ECE9E2;
@@ -52,12 +53,12 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
       <a href="/" class="font-display font-bold text-sm tracking-tight whitespace-nowrap">HH INDUSTRIAL</a>
 
-      <nav class="hidden md:flex gap-7 font-mono text-xs tracking-widest text-dim items-center">
+      <nav class="hidden md:flex gap-7 font-mono text-xs tracking-widest text-dim items-center" aria-label="Primary navigation">
         <a href="/" class="hover:text-orange transition">HOME</a>
 
         <div class="nav-item relative py-2">
-          <span class="text-orange cursor-pointer">ROBOT RETROFIT ▾</span>
-          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[220px]">
+          <button type="button" class="text-orange" data-dropdown-toggle aria-expanded="false" aria-controls="retrofit-menu">ROBOT RETROFIT ▾</button>
+          <div id="retrofit-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[220px]">
             <a href="#controller-cabinet" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Controller Retrofit Cabinet</a>
             <a href="#abb" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">ABB Retrofit</a>
             <a href="#kuka" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">KUKA Retrofit</a>
@@ -68,17 +69,17 @@
         <a href="/yeld-tech-welding/" class="hover:text-orange transition">WELDING</a>
 
         <div class="nav-item relative py-2">
-          <span class="hover:text-orange transition cursor-pointer">CNC COMPONENTS ▾</span>
-          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+          <button type="button" class="hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="cnc-menu">CNC COMPONENTS ▾</button>
+          <div id="cnc-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/cnc-automation-components/electrode-gripper.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">CNC Gripper</a>
-            <a href="/cnc-automation-components/#pallet-handling" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Pallet Handling</a>
-            <a href="/cnc-automation-components/#custom" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Custom Components</a>
+            <a href="/cnc-automation-components/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Pallet Handling</a>
+            <a href="/cnc-automation-components/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Custom Components</a>
           </div>
         </div>
 
         <div class="nav-item relative py-2">
-          <span class="hover:text-orange transition cursor-pointer">ROBOT RESOURCES ▾</span>
-          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+          <button type="button" class="hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="resources-menu">ROBOT RESOURCES ▾</button>
+          <div id="resources-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/used-robots-parts/#used-robots" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Used Industrial Robots</a>
             <a href="/used-robots-parts/#spare-parts" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Spare Parts</a>
           </div>
@@ -87,10 +88,16 @@
         <a href="/#contact" class="hover:text-orange transition">CONTACT</a>
       </nav>
 
-      <a href="#quote" class="font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">
+      <button type="button" class="md:hidden font-mono text-xs tracking-widest border border-line-soft text-light px-3 py-2 hover:border-orange hover:text-orange transition-colors" data-mobile-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">MENU</button>
+      <a href="#quote" class="hidden sm:block font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">
         GET A QUOTE →
       </a>
     </div>
+    <nav id="mobile-menu" class="mobile-menu md:hidden border-t border-line-soft bg-panel px-6 py-5 font-mono text-xs tracking-widest" aria-label="Mobile navigation" hidden>
+      <div class="grid gap-4">
+        <a href="/" class="text-light hover:text-orange">HOME</a><a href="/robot-retrofit/" class="text-orange">ROBOT RETROFIT</a><a href="/yeld-tech-welding/" class="text-light hover:text-orange">WELDING</a><a href="/cnc-automation-components/" class="text-light hover:text-orange">CNC COMPONENTS</a><a href="/used-robots-parts/" class="text-light hover:text-orange">ROBOT RESOURCES</a><a href="#quote" class="text-orange">GET A QUOTE</a>
+      </div>
+    </nav>
   </header>
 
   <!-- ============ HERO ============ -->
@@ -279,5 +286,6 @@
     </div>
   </footer>
 
+<script src="/site.js" defer></script>
 </body>
 </html>

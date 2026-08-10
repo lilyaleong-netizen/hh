@@ -8,6 +8,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
 <style>
   :root{
     --ink:#14181C; --panel:#20262C; --paper:#ECE9E2;
@@ -35,8 +36,15 @@
         <div class="font-display font-bold text-sm tracking-tight">HH INDUSTRIAL</div>
         <div class="font-mono text-[10px] tracking-widest text-dim mt-0.5">CNC AUTOMATION COMPONENTS</div>
       </a>
-      <a href="#quote" class="font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">REQUEST A QUOTE →</a>
+      <nav class="hidden md:flex gap-5 font-mono text-[11px] tracking-widest text-dim items-center" aria-label="Primary navigation">
+        <a href="/" class="hover:text-orange">HOME</a><a href="/robot-retrofit/" class="hover:text-orange">RETROFIT</a><a href="/yeld-tech-welding/" class="hover:text-orange">WELDING</a><a href="/cnc-automation-components/" class="text-orange">CNC</a><a href="/used-robots-parts/" class="hover:text-orange">RESOURCES</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button type="button" class="md:hidden font-mono text-xs tracking-widest border border-line-soft text-light px-3 py-2 hover:border-orange hover:text-orange transition-colors" data-mobile-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">MENU</button>
+        <a href="#quote" class="hidden sm:block font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">REQUEST A QUOTE →</a>
+      </div>
     </div>
+    <nav id="mobile-menu" class="mobile-menu md:hidden border-t border-line-soft bg-panel px-6 py-5 font-mono text-xs tracking-widest" aria-label="Mobile navigation" hidden><div class="grid gap-4"><a href="/" class="text-light hover:text-orange">HOME</a><a href="/robot-retrofit/" class="text-light hover:text-orange">ROBOT RETROFIT</a><a href="/yeld-tech-welding/" class="text-light hover:text-orange">WELDING</a><a href="/cnc-automation-components/" class="text-orange">CNC COMPONENTS</a><a href="/used-robots-parts/" class="text-light hover:text-orange">ROBOT RESOURCES</a><a href="#quote" class="text-orange">REQUEST A QUOTE</a></div></nav>
   </header>
 
   <section class="bg-ink text-light py-20">
@@ -74,15 +82,16 @@
     </div>
   </section>
 
-  <footer class="bg-ink text-dim py-10 border-t border-line-soft">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between gap-4 items-center">
-      <div>
-        <div class="font-display font-bold text-light text-sm">HH Industrial</div>
-        <div class="font-mono text-[11px] tracking-widest mt-1">Your Trusted Global Industrial Automation Partner</div>
-      </div>
-      <div class="font-mono text-[11px] tracking-widest text-right">CNC AUTOMATION COMPONENTS<br>[CITY, COUNTRY] · [EMAIL]</div>
+  <footer class="bg-ink text-dim border-t border-line-soft">
+    <div class="max-w-7xl mx-auto px-6 py-14 grid sm:grid-cols-4 gap-10">
+      <div><div class="font-display font-bold text-light text-base mb-2">HH Industrial</div><p class="text-xs leading-relaxed">Your Global Automation Partner — Robot Retrofit | Welding | Precision Components.</p></div>
+      <div><div class="font-mono text-xs tracking-widest text-light mb-4">NAVIGATION</div><ul class="space-y-2 text-xs"><li><a href="/">Home</a></li><li><a href="/robot-retrofit/">Robot Retrofit</a></li><li><a href="/yeld-tech-welding/">Welding</a></li><li><a href="/used-robots-parts/">Used Robots &amp; Parts</a></li></ul></div>
+      <div><div class="font-mono text-xs tracking-widest text-light mb-4">CNC COMPONENTS</div><ul class="space-y-2 text-xs"><li><a href="electrode-gripper.html">Electrode Gripper</a></li><li><a href="#quote">Partner Inquiry</a></li></ul></div>
+      <div><div class="font-mono text-xs tracking-widest text-light mb-4">CONTACT US</div><ul class="space-y-2 text-xs"><li>[CITY, COUNTRY]</li><li>[EMAIL]</li><li class="text-dim/70">24-hour response for international inquiries</li></ul></div>
     </div>
+    <div class="border-t border-line-soft"><div class="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between gap-2 text-[11px] font-mono tracking-widest"><div>© 2026 HH Industrial. All Rights Reserved.</div><div>Your Trusted Global Industrial Automation Partner</div></div></div>
   </footer>
 
+<script src="/site.js" defer></script>
 </body>
 </html>

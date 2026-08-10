@@ -1,0 +1,40 @@
+.site-focus:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.nav-item:focus-within .dropdown,
+.nav-item[data-open="true"] .dropdown {
+  display: block;
+}
+
+.mobile-menu[hidden] {
+  display: none;
+}
+
+.form-feedback {
+  grid-column: 1 / -1;
+  margin-top: .25rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .75rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-feedback[data-state="success"] { color: #5FC2B7; }
+.form-feedback[data-state="error"] { color: #F29A5C; }
+
+footer a { transition: color .2s; }
+footer a:hover { color: var(--orange); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
