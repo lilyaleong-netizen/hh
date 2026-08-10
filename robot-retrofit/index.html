@@ -3,8 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Robot Controller Retrofit & Upgrade | HH Industrial</title>
-<meta name="description" content="HH Industrial retrofits and upgrades legacy industrial robot controllers — FANUC, ABB, KUKA, and more — extending the life of your existing automation without full replacement.">
+<title>Robot Retrofit Solutions — Controller Cabinet, ABB & KUKA Retrofit | HH Industrial</title>
+<meta name="description" content="HH Industrial retrofits industrial robot controllers for global automation integrators — controller retrofit cabinets, ABB retrofit, KUKA retrofit, and robot upgrades. Compatible, fast, cost-effective, low-maintenance.">
+<meta property="og:title" content="Robot Retrofit Solutions | HH Industrial">
+<meta property="og:description" content="Controller retrofit cabinets, ABB retrofit, KUKA retrofit, and robot upgrades for global automation integrators.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Industrial Robot Controller Retrofit",
+  "provider": {"@type": "Organization", "name": "HH Industrial"},
+  "description": "Robot controller retrofit and upgrade services for ABB, KUKA, and other industrial robot brands, supporting global automation integrators."
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -23,42 +35,161 @@
   .bg-orange{background-color:var(--orange);}
   .border-line-soft{border-color:var(--line-soft);}
   .text-dim{color:var(--text-dim);} .text-light{color:var(--text-light);}
+  .dropdown{ display:none; }
+  .nav-item:hover .dropdown{ display:block; }
+  .benefits-bg{
+    background-image: linear-gradient(rgba(20,24,28,.82), rgba(20,24,28,.82)), url('../images/hero-workshop.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  section[id]{ scroll-margin-top: 90px; }
 </style>
 </head>
 <body class="antialiased">
 
-  <header class="bg-ink text-light border-b border-line-soft">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
-      <div class="font-mono text-[10px] tracking-widest text-dim">
-        <a href="/" class="font-display font-bold text-sm text-light tracking-tight block">HH INDUSTRIAL</a>
-        ROBOT CONTROLLER RETROFIT
-      </div>
-      <a href="#quote" class="font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">REQUEST A QUOTE →</a>
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="bg-ink text-light sticky top-0 z-40 border-b border-line-soft">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+      <a href="/" class="font-display font-bold text-sm tracking-tight whitespace-nowrap">HH INDUSTRIAL</a>
+
+      <nav class="hidden md:flex gap-7 font-mono text-xs tracking-widest text-dim items-center">
+        <a href="/" class="hover:text-orange transition">HOME</a>
+
+        <div class="nav-item relative py-2">
+          <span class="text-orange cursor-pointer">ROBOT RETROFIT ▾</span>
+          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[220px]">
+            <a href="#controller-cabinet" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Controller Retrofit Cabinet</a>
+            <a href="#abb" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">ABB Retrofit</a>
+            <a href="#kuka" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">KUKA Retrofit</a>
+            <a href="#upgrade" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Robot Upgrade</a>
+          </div>
+        </div>
+
+        <a href="/yeld-tech-welding/" class="hover:text-orange transition">WELDING</a>
+
+        <div class="nav-item relative py-2">
+          <span class="hover:text-orange transition cursor-pointer">CNC COMPONENTS ▾</span>
+          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+            <a href="/cnc-automation-components/electrode-gripper.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">CNC Gripper</a>
+            <a href="/cnc-automation-components/#pallet-handling" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Pallet Handling</a>
+            <a href="/cnc-automation-components/#custom" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Custom Components</a>
+          </div>
+        </div>
+
+        <div class="nav-item relative py-2">
+          <span class="hover:text-orange transition cursor-pointer">ROBOT RESOURCES ▾</span>
+          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+            <a href="/used-robots-parts/#used-robots" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Used Industrial Robots</a>
+            <a href="/used-robots-parts/#spare-parts" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Spare Parts</a>
+          </div>
+        </div>
+
+        <a href="/#contact" class="hover:text-orange transition">CONTACT</a>
+      </nav>
+
+      <a href="#quote" class="font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">
+        GET A QUOTE →
+      </a>
     </div>
   </header>
 
+  <!-- ============ HERO ============ -->
   <section class="bg-ink text-light py-20">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">FANUC · ABB · KUKA · YASKAWA</div>
-      <h1 class="font-display font-extrabold text-4xl leading-tight mb-6">Extend the life of your automation.</h1>
+      <h1 class="font-display font-extrabold text-4xl leading-tight mb-6">Robot Retrofit Solutions</h1>
       <p class="text-dim text-lg leading-relaxed max-w-2xl mx-auto">
-        Controller retrofit and upgrade specialists — diagnose compatibility, rewire, reprogram,
-        and commission, so your existing robot arm keeps running without a full-line replacement.
+        Controller retrofit cabinets, ABB and KUKA retrofit, and robot upgrades — extending the
+        life of your integrators' existing automation without a full-line replacement.
       </p>
     </div>
   </section>
 
+  <!-- ============ BENEFITS OVER PHOTO ============ -->
+  <section class="benefits-bg text-light py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid sm:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="font-display font-bold text-lg mb-2">Compatibility</div>
+          <p class="text-sm text-dim leading-relaxed">Multi-model compatible, fast interface swap, quick replacement.</p>
+        </div>
+        <div>
+          <div class="font-display font-bold text-lg mb-2">Fast Response</div>
+          <p class="text-sm text-dim leading-relaxed">Precise control response, improved cycle time and throughput.</p>
+        </div>
+        <div>
+          <div class="font-display font-bold text-lg mb-2">Cost-Effective</div>
+          <p class="text-sm text-dim leading-relaxed">Matches imported-brand quality at a meaningfully lower cost.</p>
+        </div>
+        <div>
+          <div class="font-display font-bold text-lg mb-2">Low Maintenance</div>
+          <p class="text-sm text-dim leading-relaxed">Simple commissioning and upkeep, low total cost of ownership.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTROLLER RETROFIT CABINET ============ -->
+  <section id="controller-cabinet" class="max-w-5xl mx-auto px-6 py-20">
+    <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">01</div>
+    <h2 class="font-display font-bold text-3xl mb-5">Controller Retrofit Cabinet</h2>
+    <p class="text-black/70 leading-relaxed max-w-2xl">
+      A complete replacement control cabinet for legacy robot arms — restoring full support,
+      modern safety compliance, and spare-parts availability without replacing the mechanical
+      arm itself. Detailed configuration options available on request.
+    </p>
+  </section>
+
+  <!-- ============ ABB RETROFIT ============ -->
+  <section id="abb" class="bg-panel text-light py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">02</div>
+      <h2 class="font-display font-bold text-3xl mb-5">ABB Retrofit</h2>
+      <p class="text-dim leading-relaxed max-w-2xl">
+        Controller retrofit and upgrade for ABB industrial robot arms — diagnosis, rewiring,
+        reprogramming, and full commissioning by our engineering team. Get in touch with your
+        specific ABB model and we'll confirm compatibility and turnaround.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ KUKA RETROFIT ============ -->
+  <section id="kuka" class="max-w-5xl mx-auto px-6 py-20">
+    <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">03</div>
+    <h2 class="font-display font-bold text-3xl mb-5">KUKA Retrofit</h2>
+    <p class="text-black/70 leading-relaxed max-w-2xl">
+      Controller retrofit and upgrade for KUKA industrial robot arms, following the same
+      assessment-to-commissioning process. Tell us your KUKA model and application and we'll
+      confirm fit.
+    </p>
+  </section>
+
+  <!-- ============ ROBOT UPGRADE ============ -->
+  <section id="upgrade" class="bg-panel text-light py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">04</div>
+      <h2 class="font-display font-bold text-3xl mb-5">Robot Upgrade</h2>
+      <p class="text-dim leading-relaxed max-w-2xl">
+        Beyond controller retrofit, we support broader upgrades — safety system modernization,
+        I/O and communication protocol updates, and performance tuning for existing robot cells.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
   <section class="max-w-6xl mx-auto px-6 py-20">
+    <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4 text-center">HOW IT WORKS</div>
+    <h2 class="font-display font-bold text-3xl text-center mb-12">A fraction of the cost of full replacement.</h2>
     <div class="grid sm:grid-cols-3 gap-8">
       <div class="bg-white p-8 border border-black/10">
         <div class="font-mono text-xs text-orange mb-3">01</div>
         <h3 class="font-display font-bold text-lg mb-2">Assessment</h3>
-        <p class="text-sm text-black/60 leading-relaxed">We evaluate your existing arm, wiring, and application requirements before quoting a retrofit path.</p>
+        <p class="text-sm text-black/60 leading-relaxed">We evaluate the existing arm, wiring, and application requirements before quoting a retrofit path.</p>
       </div>
       <div class="bg-white p-8 border border-black/10">
         <div class="font-mono text-xs text-orange mb-3">02</div>
         <h3 class="font-display font-bold text-lg mb-2">Retrofit &amp; Reprogram</h3>
-        <p class="text-sm text-black/60 leading-relaxed">New controller integration, rewiring, and program migration — handled by our engineering team.</p>
+        <p class="text-sm text-black/60 leading-relaxed">New controller integration, rewiring, and program migration handled by our engineering team.</p>
       </div>
       <div class="bg-white p-8 border border-black/10">
         <div class="font-mono text-xs text-orange mb-3">03</div>
@@ -68,60 +199,83 @@
     </div>
   </section>
 
-  <section class="bg-panel text-light py-16">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">WHY RETROFIT</div>
-      <h2 class="font-display font-bold text-2xl mb-6">A fraction of the cost of full replacement.</h2>
-      <p class="text-dim leading-relaxed">
-        Retrofitting a legacy controller preserves the mechanical investment already made in your
-        robot arm, tooling, and fixturing — while restoring full support, spare-parts availability,
-        and modern safety compliance.
-      </p>
+  <!-- ============ QUOTE FORM ============ -->
+  <section id="quote" class="bg-panel text-light py-20">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="font-display font-bold text-2xl mb-4">Tell us about your system.</h2>
+      <p class="text-dim mb-8">Robot brand, controller model, and application — we'll get back to you within 24 hours.</p>
+
+      <!-- FORM BACKEND: Web3Forms — replace access_key before publishing -->
+      <form action="https://api.web3forms.com/submit" method="POST" class="grid sm:grid-cols-2 gap-4 text-left">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="New quote request — Robot Retrofit">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+        <div>
+          <label class="font-mono text-xs tracking-widest text-dim block mb-2">NAME *</label>
+          <input type="text" name="name" required class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition">
+        </div>
+        <div>
+          <label class="font-mono text-xs tracking-widest text-dim block mb-2">EMAIL *</label>
+          <input type="email" name="email" required class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition">
+        </div>
+        <div>
+          <label class="font-mono text-xs tracking-widest text-dim block mb-2">ROBOT BRAND / MODEL</label>
+          <input type="text" name="robot_model" class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition" placeholder="e.g. ABB IRB, KUKA KRC4">
+        </div>
+        <div>
+          <label class="font-mono text-xs tracking-widest text-dim block mb-2">PHONE / WHATSAPP</label>
+          <input type="text" name="phone" class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition">
+        </div>
+        <div class="sm:col-span-2">
+          <label class="font-mono text-xs tracking-widest text-dim block mb-2">DETAILS</label>
+          <textarea name="message" rows="4" class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition resize-none" placeholder="What's failing or needs upgrading?"></textarea>
+        </div>
+        <div class="sm:col-span-2">
+          <button type="submit" class="w-full bg-orange text-ink font-display font-bold py-4 hover:brightness-110 transition">Send Quote Request</button>
+        </div>
+      </form>
     </div>
   </section>
 
-  <section id="quote" class="max-w-2xl mx-auto px-6 py-20 text-center">
-    <h2 class="font-display font-bold text-2xl mb-4">Tell us about your system.</h2>
-    <p class="text-black/60 mb-8">Robot brand, controller model, and application — we'll get back to you within 24 hours.</p>
-
-    <!-- FORM BACKEND: Web3Forms — replace access_key before publishing -->
-    <form action="https://api.web3forms.com/submit" method="POST" class="grid sm:grid-cols-2 gap-4 text-left">
-      <input type="hidden" name="access_key" value="66b62667-4daa-4650-a2d6-c97d8010fbdd">
-      <input type="hidden" name="subject" value="New quote request — Robot Retrofit">
-      <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
-      <div>
-        <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">NAME *</label>
-        <input type="text" name="name" required class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition">
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-ink text-dim border-t border-line-soft">
+    <div class="max-w-7xl mx-auto px-6 py-14 grid sm:grid-cols-4 gap-10">
+      <div class="sm:col-span-1">
+        <div class="font-display font-bold text-light text-base mb-2">HH Industrial</div>
+        <p class="text-xs leading-relaxed">Your Global Automation Partner — Robot Retrofit | Welding | Precision Components.</p>
       </div>
       <div>
-        <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">EMAIL *</label>
-        <input type="email" name="email" required class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition">
+        <div class="font-mono text-xs tracking-widest text-light mb-4">NAVIGATION</div>
+        <ul class="space-y-2 text-xs">
+          <li><a href="/" class="hover:text-orange transition">Home</a></li>
+          <li><a href="/robot-retrofit/" class="hover:text-orange transition">Robot Retrofit</a></li>
+          <li><a href="/yeld-tech-welding/" class="hover:text-orange transition">Welding</a></li>
+          <li><a href="/cnc-automation-components/" class="hover:text-orange transition">CNC Components</a></li>
+          <li><a href="/used-robots-parts/" class="hover:text-orange transition">Robot Resources</a></li>
+        </ul>
       </div>
       <div>
-        <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">ROBOT BRAND / MODEL</label>
-        <input type="text" name="robot_model" class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition" placeholder="e.g. FANUC R-30iA">
+        <div class="font-mono text-xs tracking-widest text-light mb-4">MORE</div>
+        <ul class="space-y-2 text-xs">
+          <li><a href="/insights/" class="hover:text-orange transition">Insights</a></li>
+          <li><a href="/#contact" class="hover:text-orange transition">Contact</a></li>
+        </ul>
       </div>
       <div>
-        <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">PHONE / WHATSAPP</label>
-        <input type="text" name="phone" class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition">
+        <div class="font-mono text-xs tracking-widest text-light mb-4">CONTACT US</div>
+        <ul class="space-y-2 text-xs">
+          <li>[CITY, COUNTRY]</li>
+          <li>[PHONE NUMBER]</li>
+          <li>[EMAIL]</li>
+          <li class="text-dim/70">24-hour response for international inquiries</li>
+        </ul>
       </div>
-      <div class="sm:col-span-2">
-        <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">DETAILS</label>
-        <textarea name="message" rows="4" class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition resize-none" placeholder="What's failing or needs upgrading?"></textarea>
+    </div>
+    <div class="border-t border-line-soft">
+      <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between gap-2 text-[11px] font-mono tracking-widest">
+        <div>© 2026 HH Industrial. All Rights Reserved.</div>
+        <div>Your Global Automation Partner — Robot Retrofit | Welding | Precision Components</div>
       </div>
-      <div class="sm:col-span-2">
-        <button type="submit" class="w-full bg-orange text-ink font-display font-bold py-4 hover:brightness-110 transition">Send Quote Request</button>
-      </div>
-    </form>
-  </section>
-
-  <footer class="bg-ink text-dim py-10 border-t border-line-soft">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between gap-4 items-center">
-      <div>
-        <div class="font-display font-bold text-light text-sm">HH Industrial</div>
-        <div class="font-mono text-[11px] tracking-widest mt-1">Your Trusted Global Industrial Automation Partner</div>
-      </div>
-      <div class="font-mono text-[11px] tracking-widest text-right">ROBOT CONTROLLER RETROFIT<br>[CITY, COUNTRY] · [EMAIL]</div>
     </div>
   </footer>
 
