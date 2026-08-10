@@ -147,6 +147,42 @@
       availability. Cabinet configuration and wiring adaptation are evaluated for each robot platform.
     </p>
 
+    <div class="mt-12 grid sm:grid-cols-3 gap-6">
+      <div class="bg-white p-6 border border-black/10">
+        <div class="font-mono text-xs text-orange mb-3">MODULAR CONTROL</div>
+        <h3 class="font-display font-bold text-lg mb-2">Multi-Axis Drive Architecture</h3>
+        <p class="text-sm text-black/60 leading-relaxed">The YQ04L reference platform uses configurable integrated servo drive modules for 2-6 axes, with optional auxiliary-axis support.</p>
+      </div>
+      <div class="bg-white p-6 border border-black/10">
+        <div class="font-mono text-xs text-orange mb-3">COMMUNICATION</div>
+        <h3 class="font-display font-bold text-lg mb-2">Modern Industrial Interfaces</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Core EtherCAT and PROFINET support connects current PLC, I/O, and vision environments. Documented options also include CANopen, EtherNet/IP, OPC UA, and other fieldbus interfaces by configuration.</p>
+      </div>
+      <div class="bg-white p-6 border border-black/10">
+        <div class="font-mono text-xs text-orange mb-3">ENGINEERING ACCESS</div>
+        <h3 class="font-display font-bold text-lg mb-2">Open Development Options</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Open software interfaces support HMI and process customization, with documented development options including C/C++, Lua, Python, MATLAB/Simulink, IEC 61131, and ROS workflows.</p>
+      </div>
+    </div>
+    <div class="mt-6 border-l-2 border-orange pl-5 max-w-3xl">
+      <h3 class="font-display font-bold text-lg mb-2">Motion, Vision &amp; Process Extensions</h3>
+      <p class="text-sm text-black/60 leading-relaxed">The iNexBot-based architecture combines logic and motion control with optional vision and process functions. Documented capabilities include 2D/3D hand-eye calibration, force/torque sensing support, palletizing workflows, multilingual HMI, and basic remote diagnostics. Availability depends on the selected software and hardware configuration.</p>
+    </div>
+
+    <div class="mt-14">
+      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">YQ04L REFERENCE CONFIGURATION</div>
+      <h3 class="font-display font-bold text-2xl mb-6">A modular cabinet platform configured around the robot.</h3>
+      <div class="border border-black/10 font-mono text-sm bg-white">
+        <div class="grid grid-cols-[1fr_1.4fr] px-5 py-3 border-b border-black/10"><div class="text-black/50">Drive supply</div><div>380 V integrated servo drive architecture</div></div>
+        <div class="grid grid-cols-[1fr_1.4fr] px-5 py-3 border-b border-black/10"><div class="text-black/50">Axis configuration</div><div>2-6 axes, with optional auxiliary axis</div></div>
+        <div class="grid grid-cols-[1fr_1.4fr] px-5 py-3 border-b border-black/10"><div class="text-black/50">Drive modules</div><div>5-50 A module options; up to 50 A per axis</div></div>
+        <div class="grid grid-cols-[1fr_1.4fr] px-5 py-3 border-b border-black/10"><div class="text-black/50">Control cycle</div><div>2.5 microsecond current loop; 62.5 microsecond speed/position loop</div></div>
+        <div class="grid grid-cols-[1fr_1.4fr] px-5 py-3 border-b border-black/10"><div class="text-black/50">Cabinet protection</div><div>IP54 enclosure configuration available</div></div>
+        <div class="grid grid-cols-[1fr_1.4fr] px-5 py-3"><div class="text-black/50">Final configuration</div><div>Defined by robot model, motors, feedback, wiring, safety, and application load</div></div>
+      </div>
+      <p class="font-mono text-[11px] text-black/40 mt-4">Reference values are based on YQ04L controller documentation. Final electrical, motion, and interface specifications require model-level evaluation.</p>
+    </div>
+
     <div class="mt-14 border-t border-black/10 pt-10">
       <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">RETROFIT APPLICATIONS</div>
       <h3 class="font-display font-bold text-2xl mb-4">Where controller retrofit technology is applied.</h3>
@@ -155,9 +191,9 @@
         Final cell engineering, risk assessment, and site integration remain under the integrator's control.
       </p>
       <div class="grid sm:grid-cols-2 gap-6">
-        <div class="bg-white p-6 border border-black/10"><h4 class="font-display font-bold mb-2">Welding Robots</h4><p class="text-sm text-black/60 leading-relaxed">Modernize control and communication while retaining suitable robot mechanics and welding equipment.</p></div>
-        <div class="bg-white p-6 border border-black/10"><h4 class="font-display font-bold mb-2">Handling Robots</h4><p class="text-sm text-black/60 leading-relaxed">Adapt controller, I/O, and safety interfaces for established material-handling applications.</p></div>
-        <div class="bg-white p-6 border border-black/10"><h4 class="font-display font-bold mb-2">Machine Tending</h4><p class="text-sm text-black/60 leading-relaxed">Support updated machine communication and peripheral interfaces for legacy robot assets.</p></div>
+        <div class="bg-white p-6 border border-black/10"><h4 class="font-display font-bold mb-2">Welding Robots</h4><p class="text-sm text-black/60 leading-relaxed">Modernize control and communication while retaining suitable robot mechanics, welding equipment, and partner-owned process engineering.</p></div>
+        <div class="bg-white p-6 border border-black/10"><h4 class="font-display font-bold mb-2">Handling Robots</h4><p class="text-sm text-black/60 leading-relaxed">Adapt controller, I/O, and safety interfaces for glass, sheet, tile, food, and other established transfer applications.</p></div>
+        <div class="bg-white p-6 border border-black/10"><h4 class="font-display font-bold mb-2">Machine Tending</h4><p class="text-sm text-black/60 leading-relaxed">Support updated machine communication and peripheral interfaces for loading, unloading, and legacy tending applications.</p></div>
         <div class="bg-white p-6 border border-black/10"><h4 class="font-display font-bold mb-2">Legacy Robot Systems</h4><p class="text-sm text-black/60 leading-relaxed">Evaluate controller replacement when original control hardware is obsolete or difficult to maintain.</p></div>
       </div>
     </div>
@@ -174,6 +210,11 @@
         integrators with compatibility assessment, wiring adaptation, interface conversion, and
         technical documentation before the retrofit configuration is confirmed.
       </p>
+      <div class="mt-8 grid sm:grid-cols-2 gap-6 text-sm">
+        <div class="border-t border-line-soft pt-5"><div class="font-display font-bold mb-2">Platform Evaluation</div><p class="text-dim leading-relaxed">Reference compatibility covers ABB S4C Plus and IRC5 generations, including IRB 6400, 6600, 6640, and 6700 series examples.</p></div>
+        <div class="border-t border-line-soft pt-5"><div class="font-display font-bold mb-2">Interface Scope</div><p class="text-dim leading-relaxed">Motor feedback, cabinet wiring, safety circuits, I/O, fieldbus, and peripheral interfaces are checked against the proposed controller configuration.</p></div>
+      </div>
+      <p class="font-mono text-[11px] text-dim/70 mt-6">IRC5 second-generation and OmniCore-related environments require case-by-case technical review. Compatibility references do not imply ABB authorization or affiliation.</p>
     </div>
   </section>
 
@@ -187,6 +228,11 @@
         motor and encoder interfaces, safety architecture, and communication requirements to help
         integrators define a technically appropriate retrofit path.
       </p>
+      <div class="mt-8 grid sm:grid-cols-2 gap-6 text-sm">
+        <div class="border-t border-black/10 pt-5"><div class="font-display font-bold mb-2">Platform Evaluation</div><p class="text-black/60 leading-relaxed">Reference compatibility spans KRC1, KRC2, KRC4, and KRC5 environments, with heavy-payload KR60 through KR500 series examples in the controller documentation.</p></div>
+        <div class="border-t border-black/10 pt-5"><div class="font-display font-bold mb-2">KRC Modernization Scope</div><p class="text-black/60 leading-relaxed">Controller generation, motor and encoder signals, wiring differences, safety design, payload, and application interfaces are evaluated before configuration.</p></div>
+      </div>
+      <p class="font-mono text-[11px] text-black/40 mt-6">Final support depends on the exact KUKA robot, KRC generation, installed options, and machine condition. Compatibility references do not imply KUKA authorization or affiliation.</p>
   </section>
 
   <!-- ============ PROCESS ============ -->
@@ -208,6 +254,14 @@
         <div class="font-mono text-xs text-orange mb-3">03</div>
         <h3 class="font-display font-bold text-lg mb-2">Verification Support</h3>
         <p class="text-sm text-black/60 leading-relaxed">We provide test records and technical support so the integrator can complete application validation and site integration.</p>
+      </div>
+    </div>
+    <div class="mt-14 border-t border-black/10 pt-10">
+      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4 text-center">DOCUMENTATION &amp; LIFECYCLE SUPPORT</div>
+      <div class="grid sm:grid-cols-3 gap-8 text-center">
+        <div><div class="font-display font-bold text-lg mb-2">Warranty</div><p class="text-sm text-black/60 leading-relaxed">The YQ04L reference service scope includes a one-year controller cabinet warranty.</p></div>
+        <div><div class="font-display font-bold text-lg mb-2">Remote Technical Support</div><p class="text-sm text-black/60 leading-relaxed">Connectivity supports basic monitoring and remote electrical diagnostics, with a documented 48-hour remote response target.</p></div>
+        <div><div class="font-display font-bold text-lg mb-2">Engineering Documentation</div><p class="text-sm text-black/60 leading-relaxed">Operation and maintenance manuals, video guidance, training, and remote commissioning support are available for integrator teams.</p></div>
       </div>
     </div>
   </section>
@@ -232,8 +286,8 @@
           <input type="email" name="email" required class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition">
         </div>
         <div>
-          <label class="font-mono text-xs tracking-widest text-dim block mb-2">ROBOT BRAND / MODEL</label>
-          <input type="text" name="robot_model" class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition" placeholder="e.g. ABB IRB, KUKA KRC4">
+          <label class="font-mono text-xs tracking-widest text-dim block mb-2">ROBOT / CONTROLLER MODEL</label>
+          <input type="text" name="robot_model" class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition" placeholder="e.g. ABB IRB 6640 / IRC5, KUKA KR210 / KRC2">
         </div>
         <div>
           <label class="font-mono text-xs tracking-widest text-dim block mb-2">PHONE / WHATSAPP</label>
@@ -241,7 +295,7 @@
         </div>
         <div class="sm:col-span-2">
           <label class="font-mono text-xs tracking-widest text-dim block mb-2">DETAILS</label>
-          <textarea name="message" rows="4" class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition resize-none" placeholder="What's failing or needs upgrading?"></textarea>
+          <textarea name="message" rows="4" class="w-full bg-ink border border-line-soft px-4 py-3 text-light outline-none focus:border-orange transition resize-none" placeholder="Robot serial, controller generation, payload, application, interfaces, and current issue"></textarea>
         </div>
         <div class="sm:col-span-2">
           <button type="submit" class="w-full bg-orange text-ink font-display font-bold py-4 hover:brightness-110 transition">Request a Retrofit Evaluation</button>
