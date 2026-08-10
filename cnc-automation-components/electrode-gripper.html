@@ -51,7 +51,6 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css">
 <style>
   :root{
     --ink:#14181C;
@@ -121,23 +120,17 @@
   <header class="bg-ink text-light sticky top-0 z-40 border-b border-line-soft">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
       <a href="/" class="font-display font-bold text-sm tracking-tight whitespace-nowrap">HH INDUSTRIAL</a>
-      <nav class="hidden md:flex gap-6 font-mono text-xs tracking-widest text-dim" aria-label="Primary navigation">
+      <nav class="hidden md:flex gap-6 font-mono text-xs tracking-widest text-dim">
         <a href="/" class="hover:text-orange transition">HOME</a>
         <a href="/robot-retrofit/" class="hover:text-orange transition">RETROFIT</a>
         <a href="/yeld-tech-welding/" class="hover:text-orange transition">WELDING</a>
         <a href="/used-robots-parts/" class="hover:text-orange transition">USED ROBOTS &amp; PARTS</a>
         <a href="/cnc-automation-components/" class="text-orange">CNC COMPONENTS</a>
       </nav>
-      <button type="button" class="md:hidden font-mono text-xs tracking-widest border border-line-soft text-light px-3 py-2 hover:border-orange hover:text-orange transition-colors" data-mobile-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">MENU</button>
-      <a href="#quote" class="hidden sm:block font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">
+      <a href="#quote" class="font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">
         REQUEST A QUOTE →
       </a>
     </div>
-    <nav id="mobile-menu" class="mobile-menu md:hidden border-t border-line-soft bg-panel px-6 py-5 font-mono text-xs tracking-widest" aria-label="Mobile navigation" hidden>
-      <div class="grid gap-4">
-        <a href="/" class="text-light hover:text-orange">HOME</a><a href="/robot-retrofit/" class="text-light hover:text-orange">ROBOT RETROFIT</a><a href="/yeld-tech-welding/" class="text-light hover:text-orange">WELDING</a><a href="/cnc-automation-components/" class="text-orange">CNC COMPONENTS</a><a href="/used-robots-parts/" class="text-light hover:text-orange">ROBOT RESOURCES</a><a href="#quote" class="text-orange">REQUEST A QUOTE</a>
-      </div>
-    </nav>
     <div class="max-w-7xl mx-auto px-6 pb-3 -mt-1">
       <div class="font-mono text-[10px] tracking-widest text-dim">
         <a href="/cnc-automation-components/" class="hover:text-orange transition">CNC AUTOMATION COMPONENTS</a>&nbsp;/&nbsp;ELECTRODE GRIPPER
@@ -442,7 +435,7 @@
         3. That's it — submissions arrive by email. Free tier: 250 submissions/month.
       -->
       <form action="https://api.web3forms.com/submit" method="POST" class="grid sm:grid-cols-2 gap-5">
-        <input type="hidden" name="access_key" value="66b62667-4daa-4650-a2d6-c97d8010fbdd">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
         <input type="hidden" name="subject" value="New quote request — Electrode Gripper">
         <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
 
@@ -563,6 +556,5 @@
     </div>
   </footer>
 
-<script src="/site.js" defer></script>
 </body>
 </html>
