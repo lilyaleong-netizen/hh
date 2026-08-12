@@ -20,7 +20,6 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css">
 <style>
   :root{
     --ink:#14181C; --panel:#20262C; --paper:#ECE9E2;
@@ -59,32 +58,33 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
       <a href="/" class="font-display font-bold text-sm tracking-tight whitespace-nowrap">HH INDUSTRIAL</a>
 
-      <nav class="hidden md:flex gap-7 font-mono text-xs tracking-widest text-dim items-center" aria-label="Primary navigation">
+      <nav class="hidden md:flex gap-7 font-mono text-xs tracking-widest text-dim items-center">
         <a href="/" class="hover:text-orange transition">HOME</a>
 
         <div class="nav-item relative py-2">
-          <button type="button" class="hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="retrofit-menu">ROBOT RETROFIT ▾</button>
-          <div id="retrofit-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[220px]">
-            <a href="/robot-retrofit/#retrofit-cabinet" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Retrofit Cabinet</a>
+          <span class="hover:text-orange transition cursor-pointer">ROBOT RETROFIT ▾</span>
+          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[220px]">
+            <a href="/robot-retrofit/#controller-cabinet" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Controller Retrofit Cabinet</a>
             <a href="/robot-retrofit/#abb" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">ABB Retrofit</a>
             <a href="/robot-retrofit/#kuka" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">KUKA Retrofit</a>
+            <a href="/robot-retrofit/#upgrade" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Robot Upgrade</a>
           </div>
         </div>
 
         <a href="/yeld-tech-welding/" class="hover:text-orange transition">WELDING</a>
 
         <div class="nav-item relative py-2">
-          <button type="button" class="hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="cnc-menu">CNC COMPONENTS ▾</button>
-          <div id="cnc-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+          <span class="hover:text-orange transition cursor-pointer">CNC COMPONENTS ▾</span>
+          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/cnc-automation-components/electrode-gripper.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">CNC Gripper</a>
-            <a href="/cnc-automation-components/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Pallet Handling</a>
-            <a href="/cnc-automation-components/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Custom Components</a>
+            <a href="/cnc-automation-components/#pallet-handling" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Pallet Handling</a>
+            <a href="/cnc-automation-components/#custom" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Custom Components</a>
           </div>
         </div>
 
         <div class="nav-item relative py-2">
-          <button type="button" class="hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="resources-menu">ROBOT RESOURCES ▾</button>
-          <div id="resources-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+          <span class="hover:text-orange transition cursor-pointer">ROBOT RESOURCES ▾</span>
+          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/used-robots-parts/#used-robots" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Used Industrial Robots</a>
             <a href="/used-robots-parts/#spare-parts" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Spare Parts</a>
           </div>
@@ -93,46 +93,31 @@
         <a href="#contact" class="hover:text-orange transition">CONTACT</a>
       </nav>
 
-      <button type="button" class="md:hidden font-mono text-xs tracking-widest border border-line-soft text-light px-3 py-2 hover:border-orange hover:text-orange transition-colors" data-mobile-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">MENU</button>
-      <a href="#contact" class="hidden sm:block font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">
+      <a href="#contact" class="font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">
         GET A QUOTE →
       </a>
     </div>
-    <nav id="mobile-menu" class="mobile-menu md:hidden border-t border-line-soft bg-panel px-6 py-5 font-mono text-xs tracking-widest" aria-label="Mobile navigation" hidden>
-      <div class="grid gap-4">
-        <a href="/" class="text-light hover:text-orange">HOME</a>
-        <a href="/robot-retrofit/" class="text-light hover:text-orange">ROBOT RETROFIT</a>
-        <a href="/yeld-tech-welding/" class="text-light hover:text-orange">WELDING</a>
-        <a href="/cnc-automation-components/" class="text-light hover:text-orange">CNC COMPONENTS</a>
-        <a href="/used-robots-parts/" class="text-light hover:text-orange">ROBOT RESOURCES</a>
-        <a href="#contact" class="text-orange">GET A QUOTE</a>
-      </div>
-    </nav>
   </header>
 
   <!-- ============ HERO ============ -->
   <section class="hero-bg text-light">
     <div class="max-w-4xl mx-auto px-6 py-28">
-      <div class="font-mono text-sm tracking-[0.2em] text-orange mb-5">FOR INTEGRATORS · ROBOT DEALERS &amp; REFURBISHERS · AUTOMATION COMPANIES</div>
-      <h1 class="font-display font-extrabold text-3xl sm:text-5xl leading-[1.1] mb-6">
+      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-5">ENGINEERING-DRIVEN AUTOMATION PARTNER</div>
+      <h1 class="font-display font-extrabold text-4xl sm:text-5xl leading-[1.1] mb-6">
         Engineering-Driven Automation Partner<br>for Global Integrators
       </h1>
-      <p class="text-dim text-lg leading-relaxed max-w-2xl mb-4">
-        Supporting automation companies with industrial robot retrofit and controller replacement,
-        welding equipment and support, and precision CNC automation components. We help partners
-        expand their offerings and reduce China sourcing complexity through English technical
-        communication, engineering coordination, and reliable manufacturing resources.
-      </p>
-      <p class="text-dim text-base leading-relaxed max-w-2xl mb-8">
-        Your local connection to China's automation capabilities — <strong class="font-semibold text-light">without the complexity</strong> of managing multiple suppliers.
+      <p class="text-dim text-lg leading-relaxed max-w-2xl mb-10">
+        Specialized in industrial robot retrofit, automation technologies, and precision
+        components — helping partners deliver reliable solutions backed by China's
+        engineering resources.
       </p>
 
       <div class="flex flex-wrap gap-4 mb-16">
-        <a href="#contact" class="w-full sm:w-auto bg-orange text-ink text-center font-display font-bold px-4 sm:px-6 py-3.5 hover:brightness-110 transition">
-          Discuss Your Automation Project — 24h Reply
+        <a href="#contact" class="bg-orange text-ink font-display font-bold px-6 py-3.5 hover:brightness-110 transition">
+          Request a Retrofit &amp; Automation Quote — 24h Reply
         </a>
-        <a href="#pillars" class="w-full sm:w-auto border border-line-soft px-6 py-3.5 text-center font-display font-bold hover:border-orange transition">
-          Explore Solutions
+        <a href="#pillars" class="border border-line-soft px-6 py-3.5 font-display font-bold hover:border-orange transition">
+          View Solutions
         </a>
       </div>
 
@@ -164,7 +149,7 @@
         <div class="p-8">
           <div class="font-mono text-xs text-orange mb-3">01 · PRIORITY</div>
           <h3 class="font-display font-bold text-xl mb-3">Robot Retrofit</h3>
-          <p class="text-sm text-black/60 leading-relaxed">Controller replacement and retrofit support for ABB and KUKA robots — extending service life and avoiding unnecessary replacement costs.</p>
+          <p class="text-sm text-black/60 leading-relaxed">Controller retrofit cabinets, ABB &amp; KUKA retrofit, and robot upgrades — extending the life of existing automation.</p>
         </div>
       </a>
       <a href="/yeld-tech-welding/" class="pillar-card bg-white block overflow-hidden">
@@ -172,7 +157,7 @@
         <div class="p-8">
           <div class="font-mono text-xs text-teal mb-3">02</div>
           <h3 class="font-display font-bold text-xl mb-3">Welding</h3>
-          <p class="text-sm text-black/60 leading-relaxed">Welding equipment, modules, torches, and engineering support that automation partners can integrate into their own customer projects.</p>
+          <p class="text-sm text-black/60 leading-relaxed">Mobile cobot welding carts, welding power sources, torches, and accessories — by Yeld Tech Welding.</p>
         </div>
       </a>
       <a href="/cnc-automation-components/" class="pillar-card bg-white block overflow-hidden">
@@ -180,7 +165,7 @@
         <div class="p-8">
           <div class="font-mono text-xs text-orange mb-3">03</div>
           <h3 class="font-display font-bold text-xl mb-3">CNC Automation Components</h3>
-          <p class="text-sm text-black/60 leading-relaxed">Precision grippers, pallet-handling modules, and custom components that enable reliable CNC automation projects.</p>
+          <p class="text-sm text-black/60 leading-relaxed">Precision grippers, pallet handling, and custom components engineered for unattended cells.</p>
         </div>
       </a>
     </div>
@@ -195,23 +180,23 @@
       <div class="grid sm:grid-cols-2 gap-8">
         <div class="border border-line-soft p-8">
           <div class="font-mono text-xs text-orange mb-3">01</div>
-          <h3 class="font-display font-bold text-lg mb-3">Robot Application Understanding</h3>
-          <p class="text-sm text-dim leading-relaxed">We combine industrial robot experience with application knowledge and technical communication in English, helping partners evaluate practical options before purchasing.</p>
+          <h3 class="font-display font-bold text-lg mb-3">Engineering Beyond Supply</h3>
+          <p class="text-sm text-dim leading-relaxed">We combine industrial robot experience, application knowledge, and engineering capability to help partners identify practical automation solutions.</p>
         </div>
         <div class="border border-line-soft p-8">
           <div class="font-mono text-xs text-orange mb-3">02</div>
           <h3 class="font-display font-bold text-lg mb-3">Supporting Integrators, Not Competing With Them</h3>
-          <p class="text-sm text-dim leading-relaxed">We work as an extension of your team, providing technical and sourcing support while you retain project ownership and your customer relationship.</p>
+          <p class="text-sm text-dim leading-relaxed">We work as an extension of your team, providing technology, sourcing capability, and technical communication while you maintain your customer relationship.</p>
         </div>
         <div class="border border-line-soft p-8">
           <div class="font-mono text-xs text-orange mb-3">03</div>
-          <h3 class="font-display font-bold text-lg mb-3">Evaluated Sourcing From China</h3>
-          <p class="text-sm text-dim leading-relaxed">We help assess suppliers, clarify specifications, and coordinate technical details — reducing the complexity of sourcing industrial products from China.</p>
+          <h3 class="font-display font-bold text-lg mb-3">Extending the Life of Industrial Robots</h3>
+          <p class="text-sm text-dim leading-relaxed">Our retrofit solutions help partners upgrade existing KUKA/ABB robot systems, reduce replacement costs, and integrate modern automation requirements.</p>
         </div>
         <div class="border border-line-soft p-8">
           <div class="font-mono text-xs text-orange mb-3">04</div>
-          <h3 class="font-display font-bold text-lg mb-3">Customization, Documentation &amp; Export Support</h3>
-          <p class="text-sm text-dim leading-relaxed">We coordinate product customization, technical documentation, interface details, and export requirements with manufacturing partners.</p>
+          <h3 class="font-display font-bold text-lg mb-3">Access to Flexible Manufacturing Resources</h3>
+          <p class="text-sm text-dim leading-relaxed">Leveraging China's industrial ecosystem to provide competitive automation technologies, components, and customized solutions.</p>
         </div>
       </div>
     </div>
@@ -220,12 +205,12 @@
   <!-- ============ TECHNOLOGY PARTNERS ============ -->
   <section class="py-16">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-6">COMPATIBLE ROBOT PLATFORMS</div>
+      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-6">ROBOT BRANDS WE WORK WITH</div>
       <img src="images/robot-brand-logos.png" alt="ABB, KUKA, Yaskawa, FANUC" class="mx-auto mb-8 max-w-md w-full h-auto">
       <p class="text-black/60 leading-relaxed max-w-2xl mx-auto">
-        Our retrofit, robot resource, and spare-parts support covers these established
-        platforms — helping partners evaluate compatible options for existing robot assets
-        without implying manufacturer authorization or affiliation.
+        From controller retrofit to used robots and spare parts, we work across these
+        established brands — giving integrators the reliability of proven platforms with the
+        flexibility of a custom-engineered solution.
       </p>
     </div>
   </section>
@@ -236,9 +221,10 @@
       <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">ADDITIONAL SUPPORT FOR AUTOMATION PARTNERS</div>
       <h2 class="font-display font-bold text-2xl mb-6">Expand your offering, without expanding your overhead.</h2>
       <p class="text-dim leading-relaxed max-w-2xl mx-auto mb-8">
-        Through our engineering network and manufacturing resources in China, we help
-        automation partners access additional modules, components, used robots, spare parts,
-        and customized product support without adding internal sourcing resources.
+        Beyond our core solutions, we provide access to flexible engineering resources and
+        manufacturing capabilities in China — helping automation partners expand their
+        offerings with reliable modules, components, used robots &amp; spare parts, and
+        customized support.
       </p>
       <a href="/used-robots-parts/" class="font-mono text-xs tracking-widest text-orange border-b border-orange hover:text-light hover:border-light transition">
         VIEW USED ROBOTS &amp; SPARE PARTS →
@@ -249,22 +235,22 @@
   <!-- ============ PROCESS ============ -->
   <section class="max-w-6xl mx-auto px-6 py-20">
     <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4 text-center">HOW WE WORK TOGETHER</div>
-    <h2 class="font-display font-bold text-3xl text-center mb-12">Clear technical and sourcing coordination.</h2>
+    <h2 class="font-display font-bold text-3xl text-center mb-12">A simple process, built around your project.</h2>
     <div class="grid sm:grid-cols-3 gap-8">
       <div class="bg-white p-8 border border-black/10">
         <div class="font-mono text-xs text-orange mb-3">01</div>
-        <h3 class="font-display font-bold text-lg mb-2">Requirement Review</h3>
-        <p class="text-sm text-black/60 leading-relaxed">We review the application, existing equipment, interfaces, quantity, and timeline to clarify what your team needs.</p>
+        <h3 class="font-display font-bold text-lg mb-2">Assessment</h3>
+        <p class="text-sm text-black/60 leading-relaxed">We review your project, existing systems, and requirements to understand what's actually needed.</p>
       </div>
       <div class="bg-white p-8 border border-black/10">
         <div class="font-mono text-xs text-orange mb-3">02</div>
-        <h3 class="font-display font-bold text-lg mb-2">Technical Coordination</h3>
-        <p class="text-sm text-black/60 leading-relaxed">We coordinate specifications, supplier evaluation, customization details, and documentation with the relevant manufacturing resources.</p>
+        <h3 class="font-display font-bold text-lg mb-2">Technology Plan</h3>
+        <p class="text-sm text-black/60 leading-relaxed">We recommend the right retrofit, welding, or component solution, with clear scope and timeline.</p>
       </div>
       <div class="bg-white p-8 border border-black/10">
         <div class="font-mono text-xs text-orange mb-3">03</div>
-        <h3 class="font-display font-bold text-lg mb-2">Supply Confirmation</h3>
-        <p class="text-sm text-black/60 leading-relaxed">Once aligned, we confirm product scope, pricing, lead time, and export requirements so your team can proceed with confidence.</p>
+        <h3 class="font-display font-bold text-lg mb-2">Confirmation</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Once aligned, we confirm scope, pricing, and delivery — so you can move forward with your customer.</p>
       </div>
     </div>
   </section>
@@ -272,12 +258,12 @@
 
   <!-- ============ CONTACT ============ -->
   <section id="contact" class="max-w-2xl mx-auto px-6 py-20 text-center">
-    <h2 class="font-display font-bold text-2xl mb-4">Discuss your project or partnership requirements.</h2>
-    <p class="text-black/60 mb-8">Share your company, market, equipment, project stage, and expected quantity or timeline. We'll route your inquiry to the right technical contact within 24 hours.</p>
+    <h2 class="font-display font-bold text-2xl mb-4">Tell us what you're working on.</h2>
+    <p class="text-black/60 mb-8">Retrofit, welding, components, or resources — we'll route your inquiry to the right team within 24 hours.</p>
 
     <!-- FORM BACKEND: Web3Forms — replace access_key before publishing -->
     <form action="https://api.web3forms.com/submit" method="POST" class="grid sm:grid-cols-2 gap-4 text-left">
-      <input type="hidden" name="access_key" value="66b62667-4daa-4650-a2d6-c97d8010fbdd">
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
       <input type="hidden" name="subject" value="New inquiry — HH Industrial Homepage">
       <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
       <div>
@@ -287,14 +273,6 @@
       <div>
         <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">EMAIL *</label>
         <input type="email" name="email" required class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition">
-      </div>
-      <div>
-        <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">COMPANY *</label>
-        <input type="text" name="company" required class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition">
-      </div>
-      <div>
-        <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">COUNTRY / MARKET</label>
-        <input type="text" name="market" class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition">
       </div>
       <div class="sm:col-span-2">
         <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">I'M INTERESTED IN</label>
@@ -307,26 +285,8 @@
         </select>
       </div>
       <div class="sm:col-span-2">
-        <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">ROBOT MODEL / EQUIPMENT</label>
-        <input type="text" name="equipment" class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition" placeholder="Robot model, controller, machine, or component">
-      </div>
-      <div>
-        <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">PROJECT STAGE</label>
-        <select name="project_stage" class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition">
-          <option value="planning">Planning / Evaluation</option>
-          <option value="specification">Technical Specification</option>
-          <option value="quotation">Quotation / Sourcing</option>
-          <option value="active-project">Active Project</option>
-          <option value="distribution">Distribution / Cooperation</option>
-        </select>
-      </div>
-      <div>
-        <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">QUANTITY / TIMELINE</label>
-        <input type="text" name="quantity_timeline" class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition" placeholder="Optional">
-      </div>
-      <div class="sm:col-span-2">
         <label class="font-mono text-xs tracking-widest text-black/50 block mb-2">MESSAGE</label>
-        <textarea name="message" rows="4" class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition resize-none" placeholder="Application requirements, interface details, technical questions, or cooperation needs"></textarea>
+        <textarea name="message" rows="4" class="w-full border border-black/20 px-4 py-3 outline-none focus:border-orange transition resize-none"></textarea>
       </div>
       <div class="sm:col-span-2">
         <button type="submit" class="w-full bg-orange text-ink font-display font-bold py-4 hover:brightness-110 transition">Send Inquiry</button>
@@ -366,9 +326,9 @@
       <div>
         <div class="font-mono text-xs tracking-widest text-light mb-4">CONTACT US</div>
         <ul class="space-y-2 text-xs">
-          <li>[CITY, COUNTRY]</li>
-          <li>[PHONE NUMBER]</li>
-          <li>[EMAIL]</li>
+          <li>[Dongguan, China]</li>
+          <li>[86 13925563932]</li>
+          <li>[tina@honghengrobot.com]</li>
           <li class="text-dim/70">24-hour response for international inquiries</li>
         </ul>
       </div>
@@ -382,6 +342,5 @@
     </div>
   </footer>
 
-<script src="/site.js" defer></script>
 </body>
 </html>
