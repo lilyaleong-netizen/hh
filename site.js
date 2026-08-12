@@ -10,7 +10,9 @@
   }
 
   document.querySelectorAll('[data-dropdown-toggle]').forEach(function (button) {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
       var item = button.closest('.nav-item');
       var willOpen = item.dataset.open !== 'true';
       closeDesktopMenus(item);
@@ -22,6 +24,10 @@
   document.addEventListener('click', function (event) {
     if (!event.target.closest('.nav-item')) closeDesktopMenus();
   });
+
+  window.addEventListener('scroll', function () {
+    closeDesktopMenus();
+  }, { passive: true });
 
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {

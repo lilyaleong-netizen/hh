@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -52,55 +52,81 @@
   <!-- ============ HEADER / NAV ============ -->
   <header class="bg-ink text-light sticky top-0 z-40 border-b border-line-soft">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
-      <a href="/" class="font-display font-bold text-sm tracking-tight whitespace-nowrap">HH INDUSTRIAL</a>
+      <a href="/" class="font-display whitespace-nowrap flex items-baseline gap-1.5" aria-label="HH Industrial">
+        <span class="font-extrabold text-lg tracking-wide">HH</span>
+        <span class="font-bold text-sm tracking-tight">INDUSTRIAL</span>
+      </a>
 
-      <nav class="hidden md:flex gap-7 font-mono text-xs tracking-widest text-dim items-center" aria-label="Primary navigation">
+      <nav class="hidden md:flex gap-7 font-mono text-sm tracking-widest text-dim items-center">
         <a href="/" class="hover:text-orange transition">HOME</a>
 
-        <div class="nav-item relative py-2">
-          <button type="button" class="text-orange" data-dropdown-toggle aria-expanded="false" aria-controls="retrofit-menu">ROBOT RETROFIT ▾</button>
+        <div class="nav-item relative py-2 flex items-center">
+          <a href="/robot-retrofit/" class="hover:text-orange transition">ROBOT RETROFIT</a>
+          <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button>
           <div id="retrofit-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[220px]">
-            <a href="#retrofit-cabinet" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Retrofit Cabinet</a>
-            <a href="#abb" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">ABB Retrofit</a>
-            <a href="#kuka" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">KUKA Retrofit</a>
+            <a href="/robot-retrofit/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Controller Retrofit</a>
+            <a href="/robot-retrofit/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Retrofit Cabinet</a>
+            <a href="/robot-retrofit/#abb" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">ABB Retrofit</a>
+            <a href="/robot-retrofit/#kuka" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">KUKA Retrofit</a>
           </div>
         </div>
 
-        <a href="/yeld-tech-welding/" class="hover:text-orange transition">WELDING</a>
+        <div class="nav-item relative py-2 flex items-center">
+          <a href="/yeld-tech-welding/" class="hover:text-orange transition">WELDING</a>
+          <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="welding-menu" aria-label="Toggle Welding menu">▾</button>
+          <div id="welding-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+            <a href="/yeld-tech-welding/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Mobile Welding Cart</a>
+          </div>
+        </div>
 
         <div class="nav-item relative py-2">
-          <button type="button" class="hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="cnc-menu">CNC COMPONENTS ▾</button>
-          <div id="cnc-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+          <a href="/cnc-automation-components/electrode-gripper.html" class="hover:text-orange transition">CNC COMPONENTS ▾</a>
+          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/cnc-automation-components/electrode-gripper.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">CNC Gripper</a>
-            <a href="/cnc-automation-components/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Pallet Handling</a>
-            <a href="/cnc-automation-components/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Custom Components</a>
           </div>
         </div>
 
-        <div class="nav-item relative py-2">
-          <button type="button" class="hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="resources-menu">ROBOT RESOURCES ▾</button>
+        <div class="nav-item relative py-2 flex items-center">
+          <a href="/used-robots-parts/" class="hover:text-orange transition">ROBOT RESOURCES</a>
+          <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="resources-menu" aria-label="Toggle Robot Resources menu">▾</button>
           <div id="resources-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
-            <a href="/used-robots-parts/#used-robots" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Used Industrial Robots</a>
-            <a href="/used-robots-parts/#spare-parts" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Spare Parts</a>
+            <a href="/used-robots-parts/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Used Industrial Robots</a>
+            <a href="/used-robots-parts/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Spare Parts</a>
           </div>
         </div>
 
-        <a href="/#contact" class="hover:text-orange transition">CONTACT</a>
+        <a href="#footer-contact" class="hover:text-orange transition">CONTACT</a>
       </nav>
 
-      <button type="button" class="md:hidden font-mono text-xs tracking-widest border border-line-soft text-light px-3 py-2 hover:border-orange hover:text-orange transition-colors" data-mobile-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">MENU</button>
-      <a href="#quote" class="hidden sm:block font-mono text-xs tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">
-        GET A QUOTE →
-      </a>
+      <div class="flex items-center gap-3">
+        <button type="button" class="md:hidden font-mono text-sm tracking-widest border border-line-soft px-3 py-2 hover:border-orange hover:text-orange transition-colors" data-mobile-toggle aria-expanded="false" aria-controls="mobile-menu">MENU</button>
+        <a href="#quote" class="font-mono text-sm tracking-widest border border-orange text-orange px-4 py-2 hover:bg-orange hover:text-ink transition-colors whitespace-nowrap">
+          GET A QUOTE →
+        </a>
+      </div>
     </div>
     <nav id="mobile-menu" class="mobile-menu md:hidden border-t border-line-soft bg-panel px-6 py-5 font-mono text-xs tracking-widest" aria-label="Mobile navigation" hidden>
       <div class="grid gap-4">
-        <a href="/" class="text-light hover:text-orange">HOME</a><a href="/robot-retrofit/" class="text-orange">ROBOT RETROFIT</a><a href="/yeld-tech-welding/" class="text-light hover:text-orange">WELDING</a><a href="/cnc-automation-components/" class="text-light hover:text-orange">CNC COMPONENTS</a><a href="/used-robots-parts/" class="text-light hover:text-orange">ROBOT RESOURCES</a><a href="#quote" class="text-orange">GET A QUOTE</a>
+        <a href="/">HOME</a>
+        <div class="nav-item">
+          <div class="flex items-center justify-between"><a href="/robot-retrofit/">ROBOT RETROFIT</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button></div>
+          <div id="mobile-retrofit-menu" class="dropdown bg-panel py-2"><a href="/robot-retrofit/" class="block px-4 py-2">Controller Retrofit</a><a href="/robot-retrofit/" class="block px-4 py-2">Retrofit Cabinet</a><a href="/robot-retrofit/#abb" class="block px-4 py-2">ABB Retrofit</a><a href="/robot-retrofit/#kuka" class="block px-4 py-2">KUKA Retrofit</a></div>
+        </div>
+        <div class="nav-item">
+          <div class="flex items-center justify-between"><a href="/yeld-tech-welding/">WELDING</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-welding-menu" aria-label="Toggle Welding menu">▾</button></div>
+          <div id="mobile-welding-menu" class="dropdown bg-panel py-2"><a href="/yeld-tech-welding/" class="block px-4 py-2">Mobile Welding Cart</a></div>
+        </div>
+        <a href="/cnc-automation-components/electrode-gripper.html">CNC COMPONENTS</a>
+        <div class="nav-item">
+          <div class="flex items-center justify-between"><a href="/used-robots-parts/">ROBOT RESOURCES</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-resources-menu" aria-label="Toggle Robot Resources menu">▾</button></div>
+          <div id="mobile-resources-menu" class="dropdown bg-panel py-2"><a href="/used-robots-parts/" class="block px-4 py-2">Used Industrial Robots</a><a href="/used-robots-parts/" class="block px-4 py-2">Spare Parts</a></div>
+        </div>
+        <a href="#footer-contact">CONTACT</a>
       </div>
     </nav>
   </header>
 
-  <!-- ============ HERO ============ -->
+  <!-- ============ HERO ============ -->  <!-- ============ HERO ============ -->
   <section class="bg-ink text-light py-20">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">RETROFIT TECHNOLOGY FOR GLOBAL INTEGRATORS</div>
@@ -181,7 +207,7 @@
         <div class="mt-5 font-mono text-xs tracking-widest text-orange">CORE COMPONENT: iNEXBOT MOTION CONTROL &amp; DRIVE</div>
       </div>
       <figure class="bg-white border border-black/10 p-3">
-        <img src="images/retrofit-cabinet-inside.png" alt="Inside view of the YQ04L industrial robot retrofit control cabinet showing servo drive modules and wiring" class="w-full h-auto object-cover" loading="lazy">
+        <img src="retrofit-cabinet-inside.png" alt="Inside view of the YQ04L industrial robot retrofit control cabinet showing servo drive modules and wiring" class="w-full h-auto object-cover" loading="lazy">
         <figcaption class="font-mono text-[11px] text-black/40 mt-2">YQ04L retrofit cabinet — internal drive and wiring layout</figcaption>
       </figure>
     </div>
@@ -233,7 +259,7 @@
       <p class="font-mono text-[11px] text-black/40 mt-4">Reference values are based on YQ04L controller documentation. Final electrical, motion, and interface specifications require model-level evaluation.</p>
 
       <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-5 border border-black/10 bg-white p-5">
-        <img src="images/ce-certification.png" alt="CE certification for the YQ04L control cabinet, Low Voltage Directive and EMC Directive" class="w-28 h-auto border border-black/10 flex-shrink-0" loading="lazy">
+        <img src="ce-certification.png" alt="CE certification for the YQ04L control cabinet, Low Voltage Directive and EMC Directive" class="w-28 h-auto border border-black/10 flex-shrink-0" loading="lazy">
         <div>
           <div class="font-display font-bold text-sm mb-1">CE Certified</div>
           <p class="text-sm text-black/60 leading-relaxed">The control cabinet product line is CE certified to the EU Low Voltage Directive and EMC Directive.</p>
@@ -261,19 +287,19 @@
         <h3 class="font-display font-bold text-xl mb-6">Retrofit cabinets running in active production.</h3>
         <div class="grid sm:grid-cols-2 gap-4">
           <figure class="bg-white border border-black/10 p-2">
-            <img src="images/field-cabinet-handling.png" alt="Retrofit control cabinet installed alongside a handling robot on the shop floor" class="w-full h-56 object-cover" loading="lazy">
+            <img src="field-cabinet-handling.png" alt="Retrofit control cabinet installed alongside a handling robot on the shop floor" class="w-full h-56 object-cover" loading="lazy">
             <figcaption class="font-mono text-[11px] text-black/40 mt-2 px-1 pb-1">Retrofit cabinet installed with a handling robot</figcaption>
           </figure>
           <figure class="bg-white border border-black/10 p-2">
-            <img src="images/field-tile-cutting-line.png" alt="Retrofit robot on an automated tile and stone processing line" class="w-full h-56 object-cover" loading="lazy">
+            <img src="field-tile-cutting-line.png" alt="Retrofit robot on an automated tile and stone processing line" class="w-full h-56 object-cover" loading="lazy">
             <figcaption class="font-mono text-[11px] text-black/40 mt-2 px-1 pb-1">Automated tile/stone processing line</figcaption>
           </figure>
           <figure class="bg-white border border-black/10 p-2">
-            <img src="images/field-gantry-commissioning.png" alt="Retrofit cabinet commissioning on a gantry-style handling cell" class="w-full h-56 object-cover" loading="lazy">
+            <img src="field-gantry-commissioning.png" alt="Retrofit cabinet commissioning on a gantry-style handling cell" class="w-full h-56 object-cover" loading="lazy">
             <figcaption class="font-mono text-[11px] text-black/40 mt-2 px-1 pb-1">Retrofit commissioning on a gantry-style cell</figcaption>
           </figure>
           <figure class="bg-white border border-black/10 p-2">
-            <img src="images/field-palletizing-yard.png" alt="Retrofit robot palletizing stone slabs in a yard operation" class="w-full h-56 object-cover" loading="lazy">
+            <img src="field-palletizing-yard.png" alt="Retrofit robot palletizing stone slabs in a yard operation" class="w-full h-56 object-cover" loading="lazy">
             <figcaption class="font-mono text-[11px] text-black/40 mt-2 px-1 pb-1">Palletizing application, yard operation</figcaption>
           </figure>
         </div>
@@ -295,7 +321,7 @@
           technical documentation before the retrofit configuration is confirmed.
         </p>
         <figure class="bg-ink border border-line-soft p-3">
-          <img src="images/abb-compatibility.png" alt="ABB S4C Plus and IRC5 controller generations supported for retrofit" class="w-full h-auto object-cover" loading="lazy">
+          <img src="abb-compatibility.png" alt="ABB S4C Plus and IRC5 controller generations supported for retrofit" class="w-full h-auto object-cover" loading="lazy">
           <figcaption class="font-mono text-[11px] text-dim/70 mt-2">Reference compatibility: ABB S4C Plus &amp; IRC5</figcaption>
         </figure>
       </div>
@@ -336,7 +362,7 @@
           integrators define a technically appropriate retrofit path.
         </p>
         <figure class="bg-white border border-black/10 p-3">
-          <img src="images/kuka-compatibility.png" alt="KUKA KRC1, KRC2, KRC4, and KRC5 controller generations supported for retrofit" class="w-full h-auto object-cover" loading="lazy">
+          <img src="kuka-compatibility.png" alt="KUKA KRC1, KRC2, KRC4, and KRC5 controller generations supported for retrofit" class="w-full h-auto object-cover" loading="lazy">
           <figcaption class="font-mono text-[11px] text-black/40 mt-2">Reference compatibility: KUKA KRC1 &middot; KRC2 &middot; KRC4 &middot; KRC5</figcaption>
         </figure>
       </div>
@@ -410,6 +436,24 @@
     </div>
   </section>
 
+  <!-- ============ FAQ ============ -->
+  <section id="robot-retrofit-faq" class="max-w-3xl mx-auto px-6 py-16" aria-labelledby="robot-retrofit-faq-heading">
+    <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">ROBOT CONTROLLER RETROFIT FAQ</div>
+    <h2 id="robot-retrofit-faq-heading" class="font-display font-bold text-2xl mb-3">Industrial robot controller retrofit: frequently asked questions</h2>
+    <p class="text-sm text-black/60 mb-10">Answers for manufacturers, automation partners and system integrators evaluating an ABB or KUKA robot controller replacement.</p>
+    <div class="space-y-8">
+      <div><h3 class="font-display font-semibold mb-2">Why retrofit an existing industrial robot instead of replacing it?</h3><p class="text-sm text-black/60">An <strong>industrial robot controller retrofit</strong> can extend the working life of a mechanically sound robot without the cost, lead time and mechanical changes often required for full replacement. HH Industrial replaces the obsolete control system while retaining the existing robot mechanical unit. This helps manufacturers preserve the installed base, reduce replacement cost and connect legacy robots to modern automation systems. Suitability depends on the robot's mechanical condition and application requirements.</p></div>
+      <div><h3 class="font-display font-semibold mb-2">Which industrial robot brands are supported for controller retrofit?</h3><p class="text-sm text-black/60">HH Industrial develops retrofit solutions for selected <strong>ABB and KUKA industrial robot</strong> platforms. Compatibility is evaluated case by case using the robot model, payload, manufacturing year, controller model, motor type, encoder system and application requirements. <a href="#quote" class="text-orange font-semibold hover:underline">Send us these details</a> so our engineers can confirm whether your robot is a suitable candidate before quotation.</p></div>
+      <div><h3 class="font-display font-semibold mb-2">Does a robot controller retrofit completely replace the original control cabinet?</h3><p class="text-sm text-black/60">Yes. The retrofit replaces the original robot control cabinet with a modern controller system while retaining the robot mechanical unit. Depending on the robot and application, the package may include a new control cabinet, robot control hardware, motion control, safety circuit integration and communication interfaces. The final scope is defined after technical evaluation.</p></div>
+      <div><h3 class="font-display font-semibold mb-2">Can a retrofitted robot controller connect to modern PLC and factory automation systems?</h3><p class="text-sm text-black/60">Yes. Depending on the selected configuration, the retrofit controller can support modern industrial communication such as <strong>EtherCAT, PROFINET</strong> and industrial network integration. This allows legacy ABB or KUKA robots to exchange signals with PLCs, production equipment and factory automation systems. Interface requirements should be confirmed during project evaluation.</p></div>
+      <div><h3 class="font-display font-semibold mb-2">Will the robot maintain its accuracy and repeatability after retrofit?</h3><p class="text-sm text-black/60">The retrofit is designed to retain the usable mechanical performance of the existing robot while modernizing its control system. Final accuracy and repeatability depend on mechanical wear, calibration, application requirements and commissioning quality. HH Industrial recommends a technical and mechanical condition review before confirming expected performance.</p></div>
+      <div><h3 class="font-display font-semibold mb-2">Does HH Industrial provide robot programming and commissioning support?</h3><p class="text-sm text-black/60">HH Industrial supports automation partners with retrofit engineering consultation, documentation, parameter guidance, interface information and remote troubleshooting. On-site installation, robot programming and commissioning are normally completed by the customer's engineering team or local system integrator. The support scope is agreed according to the project, so local integrators remain in control of the end-user relationship.</p></div>
+      <div><h3 class="font-display font-semibold mb-2">What information is required for an industrial robot retrofit quotation?</h3><p class="text-sm text-black/60">Please provide the robot brand and model, payload, manufacturing year, existing controller model, serial number if available, application type, motor and encoder information, and clear photos of the robot nameplate and control cabinet. Electrical drawings and technical documents can shorten the compatibility review and quotation process. <a href="#quote" class="text-orange font-semibold hover:underline">Request a retrofit evaluation</a>.</p></div>
+      <div><h3 class="font-display font-semibold mb-2">Can a retrofitted industrial robot be used for robotic welding?</h3><p class="text-sm text-black/60">Yes, subject to technical evaluation. Robot controller retrofit solutions can support <strong>robotic welding, material handling, machine tending and material processing</strong>. A welding project also requires evaluation of the welding power source, torch, positioner, safety equipment, fieldbus interfaces and other peripherals.</p></div>
+      <div><h3 class="font-display font-semibold mb-2">Why choose HH Industrial for a robot controller retrofit project?</h3><p class="text-sm text-black/60">HH Industrial combines industrial robot application knowledge, responsive engineering communication, China-based manufacturing resources and international project experience. We help automation partners evaluate compatibility, coordinate retrofit-related technology and reduce the complexity of sourcing from China, while leaving local installation and system integration to your engineering team or chosen integrator. <a href="#quote" class="text-orange font-semibold hover:underline">Discuss your robot retrofit project with an engineer</a>.</p></div>
+    </div>
+  </section>
+
   <!-- ============ QUOTE FORM ============ -->
   <section id="quote" class="bg-panel text-light py-20">
     <div class="max-w-2xl mx-auto px-6 text-center">
@@ -453,35 +497,41 @@
     <div class="max-w-7xl mx-auto px-6 py-14 grid sm:grid-cols-4 gap-10">
       <div class="sm:col-span-1">
         <div class="font-display font-bold text-light text-base mb-2">HH Industrial</div>
-        <p class="text-xs leading-relaxed">Your Global Automation Partner — Robot Retrofit | Welding | Precision Components.</p>
+        <p class="text-xs leading-relaxed">
+          Your Global Automation Partner — Robot Retrofit | Welding | Precision Components.
+        </p>
       </div>
+
       <div>
         <div class="font-mono text-xs tracking-widest text-light mb-4">NAVIGATION</div>
         <ul class="space-y-2 text-xs">
           <li><a href="/" class="hover:text-orange transition">Home</a></li>
           <li><a href="/robot-retrofit/" class="hover:text-orange transition">Robot Retrofit</a></li>
           <li><a href="/yeld-tech-welding/" class="hover:text-orange transition">Welding</a></li>
-          <li><a href="/cnc-automation-components/" class="hover:text-orange transition">CNC Components</a></li>
+          <li><a href="/cnc-automation-components/electrode-gripper.html" class="hover:text-orange transition">CNC Components</a></li>
           <li><a href="/used-robots-parts/" class="hover:text-orange transition">Robot Resources</a></li>
         </ul>
       </div>
+
       <div>
         <div class="font-mono text-xs tracking-widest text-light mb-4">MORE</div>
         <ul class="space-y-2 text-xs">
-          <li><a href="/insights/" class="hover:text-orange transition">Insights</a></li>
-          <li><a href="/#contact" class="hover:text-orange transition">Contact</a></li>
+          <li><a href="/robot-retrofit/#robot-retrofit-faq" class="hover:text-orange transition">Insights</a></li>
+          <li><a href="#contact" class="hover:text-orange transition">Contact</a></li>
         </ul>
       </div>
-      <div>
+
+      <div id="footer-contact">
         <div class="font-mono text-xs tracking-widest text-light mb-4">CONTACT US</div>
         <ul class="space-y-2 text-xs">
-          <li>[CITY, COUNTRY]</li>
-          <li>[PHONE NUMBER]</li>
-          <li>[EMAIL]</li>
-          <li class="text-dim/70">24-hour response for international inquiries</li>
+          <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 flex-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Dongguan, China</span></li>
+          <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 flex-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.84.56 2.8.69A2 2 0 0 1 22 16.92Z"/></svg><span>86 13925563932</span></li>
+          <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 flex-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="m3 7 9 6 9-6"/></svg><span>tina@honghengrobot.com</span></li>
+          <li class="text-dim/70 flex items-center gap-2"><svg class="w-3.5 h-3.5 flex-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 2"/></svg><span>24-hour response for international inquiries</span></li>
         </ul>
       </div>
     </div>
+
     <div class="border-t border-line-soft">
       <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between gap-2 text-[11px] font-mono tracking-widest">
         <div>© 2026 HH Industrial. All Rights Reserved.</div>
@@ -493,3 +543,7 @@
 <script src="/site.js" defer></script>
 </body>
 </html>
+
+
+
+

@@ -1,3 +1,13 @@
+.site-focus,
+html {
+  scroll-behavior: smooth;
+}
+
+#quote,
+#contact {
+  scroll-margin-top: 90px;
+}
+
 .site-focus:focus-visible,
 a:focus-visible,
 button:focus-visible,
@@ -8,9 +18,27 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
-.nav-item:focus-within .dropdown,
-.nav-item[data-open="true"] .dropdown {
-  display: block;
+.dropdown,
+.nav-item:hover .dropdown,
+.nav-item:focus-within .dropdown { display: none !important; }
+.nav-item[data-open="true"] .dropdown { display: block !important; }
+
+.dropdown-toggle {
+  padding: .25rem;
+  color: inherit;
+  line-height: 1;
+}
+
+.dropdown-toggle[aria-expanded="true"] { color: var(--orange); }
+
+@media (max-width: 767px) {
+  .mobile-menu .dropdown {
+    position: static;
+    min-width: 0;
+    margin-top: .5rem;
+    border: 0;
+    border-left: 1px solid var(--line-soft);
+  }
 }
 
 .mobile-menu[hidden] {
