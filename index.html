@@ -1,6 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGQXC8XD8Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SGQXC8XD8Q');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HH Industrial — Robot Retrofit, Welding & Precision Automation Components</title>
@@ -70,7 +78,7 @@
           <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button>
           <div id="retrofit-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[220px]">
             <a href="/robot-retrofit/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Controller Retrofit</a>
-            <a href="/robot-retrofit/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Retrofit Cabinet</a>
+            <a href="/robot-retrofit/inexbot-motion-control.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Motion Control</a>
             <a href="/robot-retrofit/#abb" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">ABB Retrofit</a>
             <a href="/robot-retrofit/#kuka" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">KUKA Retrofit</a>
           </div>
@@ -84,9 +92,10 @@
           </div>
         </div>
 
-        <div class="nav-item relative py-2">
-          <a href="/cnc-automation-components/electrode-gripper.html" class="hover:text-orange transition">CNC COMPONENTS ▾</a>
-          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+        <div class="nav-item relative py-2 flex items-center">
+          <a href="/cnc-automation-components/electrode-gripper.html" class="hover:text-orange transition">CNC COMPONENTS</a>
+          <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="cnc-menu" aria-label="Toggle CNC Components menu">▾</button>
+          <div id="cnc-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/cnc-automation-components/electrode-gripper.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">CNC Gripper</a>
           </div>
         </div>
@@ -115,7 +124,7 @@
         <a href="/">HOME</a>
         <div class="nav-item">
           <div class="flex items-center justify-between"><a href="/robot-retrofit/">ROBOT RETROFIT</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button></div>
-          <div id="mobile-retrofit-menu" class="dropdown bg-panel py-2"><a href="/robot-retrofit/" class="block px-4 py-2">Controller Retrofit</a><a href="/robot-retrofit/" class="block px-4 py-2">Retrofit Cabinet</a><a href="/robot-retrofit/#abb" class="block px-4 py-2">ABB Retrofit</a><a href="/robot-retrofit/#kuka" class="block px-4 py-2">KUKA Retrofit</a></div>
+          <div id="mobile-retrofit-menu" class="dropdown bg-panel py-2"><a href="/robot-retrofit/" class="block px-4 py-2">Controller Retrofit</a><a href="/robot-retrofit/inexbot-motion-control.html" class="block px-4 py-2">Motion Control</a><a href="/robot-retrofit/#abb" class="block px-4 py-2">ABB Retrofit</a><a href="/robot-retrofit/#kuka" class="block px-4 py-2">KUKA Retrofit</a></div>
         </div>
         <div class="nav-item">
           <div class="flex items-center justify-between"><a href="/yeld-tech-welding/">WELDING</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-welding-menu" aria-label="Toggle Welding menu">▾</button></div>
@@ -295,7 +304,7 @@
 
     <!-- FORM BACKEND: Web3Forms — replace access_key before publishing -->
     <form action="https://api.web3forms.com/submit" method="POST" class="grid sm:grid-cols-2 gap-4 text-left">
-      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="access_key" value="66b62667-4daa-4650-a2d6-c97d8010fbdd">
       <input type="hidden" name="subject" value="New inquiry — HH Industrial Homepage">
       <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
       <div>
@@ -389,4 +398,3 @@
 <script src="/site.js" defer></script>
 </body>
 </html>
-

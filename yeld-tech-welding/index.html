@@ -1,6 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGQXC8XD8Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SGQXC8XD8Q');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mobile Cobot Welding Platform for UR, DUCO & JAKA | YeldTech Welding</title>
@@ -20,7 +28,7 @@
   .font-display{font-family:'Archivo',sans-serif;}
   .font-mono{font-family:'IBM Plex Mono',monospace;}
   .bg-ink{background-color:var(--ink);} .bg-panel{background-color:var(--panel);}
-  .text-teal{color:var(--teal);} .bg-teal{background-color:var(--teal);}
+  .text-orange{color:var(--orange);} .text-teal{color:var(--teal);} .bg-teal{background-color:var(--teal);}
   .border-line-soft{border-color:var(--line-soft);}
   .text-dim{color:var(--text-dim);} .text-light{color:var(--text-light);}
   .welding-hero{
@@ -46,23 +54,24 @@
           <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button>
           <div id="retrofit-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[220px]">
             <a href="/robot-retrofit/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Controller Retrofit</a>
-            <a href="/robot-retrofit/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Retrofit Cabinet</a>
+            <a href="/robot-retrofit/inexbot-motion-control.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Motion Control</a>
             <a href="/robot-retrofit/#abb" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">ABB Retrofit</a>
             <a href="/robot-retrofit/#kuka" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">KUKA Retrofit</a>
           </div>
         </div>
 
         <div class="nav-item relative py-2 flex items-center">
-          <a href="/yeld-tech-welding/" class="hover:text-orange transition">WELDING</a>
+          <a href="/yeld-tech-welding/" class="text-orange hover:text-orange transition" aria-current="page">WELDING</a>
           <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="welding-menu" aria-label="Toggle Welding menu">▾</button>
           <div id="welding-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/yeld-tech-welding/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Mobile Welding Cart</a>
           </div>
         </div>
 
-        <div class="nav-item relative py-2">
-          <a href="/cnc-automation-components/electrode-gripper.html" class="hover:text-orange transition">CNC COMPONENTS ▾</a>
-          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+        <div class="nav-item relative py-2 flex items-center">
+          <a href="/cnc-automation-components/electrode-gripper.html" class="hover:text-orange transition">CNC COMPONENTS</a>
+          <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="cnc-menu" aria-label="Toggle CNC Components menu">▾</button>
+          <div id="cnc-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/cnc-automation-components/electrode-gripper.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">CNC Gripper</a>
           </div>
         </div>
@@ -91,10 +100,10 @@
         <a href="/">HOME</a>
         <div class="nav-item">
           <div class="flex items-center justify-between"><a href="/robot-retrofit/">ROBOT RETROFIT</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button></div>
-          <div id="mobile-retrofit-menu" class="dropdown bg-panel py-2"><a href="/robot-retrofit/" class="block px-4 py-2">Controller Retrofit</a><a href="/robot-retrofit/" class="block px-4 py-2">Retrofit Cabinet</a><a href="/robot-retrofit/#abb" class="block px-4 py-2">ABB Retrofit</a><a href="/robot-retrofit/#kuka" class="block px-4 py-2">KUKA Retrofit</a></div>
+          <div id="mobile-retrofit-menu" class="dropdown bg-panel py-2"><a href="/robot-retrofit/" class="block px-4 py-2">Controller Retrofit</a><a href="/robot-retrofit/inexbot-motion-control.html" class="block px-4 py-2">Motion Control</a><a href="/robot-retrofit/#abb" class="block px-4 py-2">ABB Retrofit</a><a href="/robot-retrofit/#kuka" class="block px-4 py-2">KUKA Retrofit</a></div>
         </div>
         <div class="nav-item">
-          <div class="flex items-center justify-between"><a href="/yeld-tech-welding/">WELDING</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-welding-menu" aria-label="Toggle Welding menu">▾</button></div>
+          <div class="flex items-center justify-between"><a href="/yeld-tech-welding/" class="text-orange hover:text-orange transition" aria-current="page">WELDING</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-welding-menu" aria-label="Toggle Welding menu">▾</button></div>
           <div id="mobile-welding-menu" class="dropdown bg-panel py-2"><a href="/yeld-tech-welding/" class="block px-4 py-2">Mobile Welding Cart</a></div>
         </div>
         <a href="/cnc-automation-components/electrode-gripper.html">CNC COMPONENTS</a>
@@ -119,6 +128,25 @@
           <strong class="text-light">DUCO</strong>, and <strong class="text-light">JAKA</strong> cobots.
         </p>
         <a href="#quote" class="inline-block font-mono text-xs tracking-widest border border-teal text-teal px-5 py-3 hover:bg-teal hover:text-ink transition-colors">REQUEST A DEMO →</a>
+        <div class="grid grid-cols-2 gap-3 mt-8">
+          <div class="border border-line-soft p-4 text-center">
+            <div class="font-display font-extrabold text-xl text-teal">30-Min</div>
+            <div class="text-dim text-xs mt-1 leading-snug">Typical Unbox-to-Weld Setup*</div>
+          </div>
+          <div class="border border-line-soft p-4 text-center">
+            <div class="font-display font-extrabold text-xl text-teal">Castor</div>
+            <div class="text-dim text-xs mt-1 leading-snug">Mobile Base, Reposition Between Lines</div>
+          </div>
+          <div class="border border-line-soft p-4 text-center">
+            <div class="font-display font-extrabold text-xl text-teal">Drag &amp; Drop</div>
+            <div class="text-dim text-xs mt-1 leading-snug">Hand-Guided Path Teaching</div>
+          </div>
+          <div class="border border-line-soft p-4 text-center">
+            <div class="font-display font-extrabold text-xl text-teal">Collaborative</div>
+            <div class="text-dim text-xs mt-1 leading-snug">By Design, Guarding Per Risk Assessment</div>
+          </div>
+        </div>
+        <p class="font-mono text-[11px] text-dim mt-4 text-center">*Setup time is for a suitable, pre-assessed application. Collaborative operation does not automatically eliminate guarding — welding hazards, tooling, speed, payload, and the complete application require a documented safety assessment.</p>
       </div>
       <figure class="bg-black border border-line-soft p-3">
         <img src="../images/cobot-welding-cart.png" alt="Mobile cobot welding cart in operation, collaborative robot welding a metal workpiece with visible arc flash" class="w-full h-auto" loading="lazy">
@@ -184,100 +212,95 @@
 
   <section class="bg-panel text-light py-16">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="font-mono text-xs tracking-[0.2em] text-teal mb-4 text-center">WHY COLLABORATIVE WELDING</div>
-      <h2 class="font-display font-bold text-3xl mb-12 text-center">Four practical advantages for flexible welding production.</h2>
-      <div class="grid sm:grid-cols-2 gap-8">
-        <div class="border border-line-soft p-8">
-          <div class="font-mono text-xs text-teal mb-3">01 · FLEXIBLE SETUP</div>
-          <h3 class="font-display font-bold text-lg mb-3">Simpler Teaching for High-Mix Work</h3>
-          <p class="text-sm text-dim leading-relaxed">Hand-guided teaching and intuitive programming can shorten setup for suitable parts, while faster changeovers support small-batch and high-mix production.</p>
+      <div class="grid lg:grid-cols-[1.05fr_.95fr] gap-10 items-center">
+        <figure class="border border-line-soft bg-ink p-3">
+          <img src="../images/welding-desk.jpg" alt="Collaborative robot welding workstation with welding table, power source, torch and wire feeder" class="w-full h-auto" loading="lazy">
+          <figcaption class="font-mono text-[11px] text-dim mt-2">Collaborative welding workstation configured for flexible production</figcaption>
+        </figure>
+        <div>
+          <div class="font-mono text-xs tracking-[0.2em] text-teal mb-4">WHY COLLABORATIVE WELDING</div>
+          <h2 class="font-display font-bold text-3xl mb-7">Four practical advantages for flexible welding production.</h2>
+          <div class="grid sm:grid-cols-2 gap-x-6 gap-y-5">
+            <div class="border-t border-line-soft pt-4">
+              <div class="font-mono text-xs text-teal mb-2">01 · FLEXIBLE SETUP</div>
+              <h3 class="font-display font-bold text-base mb-2">Simpler Teaching for High-Mix Work</h3>
+              <p class="text-sm text-dim leading-relaxed">Hand-guided teaching can shorten setup and support faster changeovers for suitable small-batch work.</p>
+            </div>
+            <div class="border-t border-line-soft pt-4">
+              <div class="font-mono text-xs text-teal mb-2">02 · COMPACT &amp; MOBILE</div>
+              <h3 class="font-display font-bold text-base mb-2">Use Floor Space More Effectively</h3>
+              <p class="text-sm text-dim leading-relaxed">A compact mobile platform can move between suitable workstations as production demand changes.</p>
+            </div>
+            <div class="border-t border-line-soft pt-4">
+              <div class="font-mono text-xs text-teal mb-2">03 · REPEATABLE OUTPUT</div>
+              <h3 class="font-display font-bold text-base mb-2">Consistent Motion Without Fatigue</h3>
+              <p class="text-sm text-dim leading-relaxed">Repeatable torch paths support consistent weld placement on repetitive production tasks.</p>
+            </div>
+            <div class="border-t border-line-soft pt-4">
+              <div class="font-mono text-xs text-teal mb-2">04 · LOWER DEPLOYMENT BURDEN</div>
+              <h3 class="font-display font-bold text-base mb-2">A Practical Entry Into Automation</h3>
+              <p class="text-sm text-dim leading-relaxed">Coordinated hardware can reduce equipment selection and integration effort for suitable applications.</p>
+            </div>
+          </div>
         </div>
-        <div class="border border-line-soft p-8">
-          <div class="font-mono text-xs text-teal mb-3">02 · COMPACT &amp; MOBILE</div>
-          <h3 class="font-display font-bold text-lg mb-3">Use Existing Floor Space More Effectively</h3>
-          <p class="text-sm text-dim leading-relaxed">A compact mobile platform can fit around existing workstations and move between suitable jobs as production demand changes.</p>
-        </div>
-        <div class="border border-line-soft p-8">
-          <div class="font-mono text-xs text-teal mb-3">03 · REPEATABLE OUTPUT</div>
-          <h3 class="font-display font-bold text-lg mb-3">Consistent Motion Without Operator Fatigue</h3>
-          <p class="text-sm text-dim leading-relaxed">Repeatable torch paths support consistent weld placement and reduce variation on repetitive work, helping skilled welders focus on complex tasks. Where supported, torque sensing and welding software can assist adaptive path control.</p>
-        </div>
-        <div class="border border-line-soft p-8">
-          <div class="font-mono text-xs text-teal mb-3">04 · LOWER DEPLOYMENT BURDEN</div>
-          <h3 class="font-display font-bold text-lg mb-3">A Practical Entry Into Welding Automation</h3>
-          <p class="text-sm text-dim leading-relaxed">Compact equipment and coordinated hardware can reduce infrastructure and integration effort compared with a conventional robot cell. Actual guarding and ROI depend on the application risk assessment.</p>
-        </div>
-      </div>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
-        <div class="border border-line-soft p-5 text-center">
-          <div class="font-display font-extrabold text-xl text-teal">30-Min</div>
-          <div class="text-dim text-xs mt-1 leading-snug">Typical Unbox-to-Weld Setup*</div>
-        </div>
-        <div class="border border-line-soft p-5 text-center">
-          <div class="font-display font-extrabold text-xl text-teal">Castor</div>
-          <div class="text-dim text-xs mt-1 leading-snug">Mobile Base, Reposition Between Lines</div>
-        </div>
-        <div class="border border-line-soft p-5 text-center">
-          <div class="font-display font-extrabold text-xl text-teal">Drag &amp; Drop</div>
-          <div class="text-dim text-xs mt-1 leading-snug">Hand-Guided Path Teaching</div>
-        </div>
-        <div class="border border-line-soft p-5 text-center">
-          <div class="font-display font-extrabold text-xl text-teal">Collaborative</div>
-          <div class="text-dim text-xs mt-1 leading-snug">By Design, Guarding Per Risk Assessment</div>
-        </div>
-      </div>
-      <p class="font-mono text-[11px] text-dim mt-6 text-center">*Setup time is for a suitable, pre-assessed application. Collaborative operation does not automatically eliminate guarding — welding hazards, tooling, speed, payload, and the complete application require a documented safety assessment.</p>
-
-      <div class="max-w-4xl mx-auto text-center border-t border-line-soft mt-16 pt-14">
-        <div class="font-mono text-xs tracking-[0.2em] text-teal mb-4">WHO WE WORK WITH</div>
-        <h2 class="font-display font-bold text-2xl mb-4">Built for integrators, distributors, and industrial partners.</h2>
-        <p class="text-dim leading-relaxed">
-          Yeld Tech Welding supports automation companies that integrate, import, or resell cobot
-          welding equipment — with product coordination, documentation, and export support from
-          HH Industrial while partners retain the end-customer application relationship.
-        </p>
       </div>
 
-      <div class="max-w-5xl mx-auto border-t border-line-soft mt-16 pt-14">
+      <div class="max-w-5xl mx-auto border-t border-line-soft mt-14 pt-12">
         <div class="font-mono text-xs tracking-[0.2em] text-teal mb-4 text-center">PARTNER PROGRAM</div>
         <h2 class="font-display font-bold text-2xl mb-4 text-center">Your agile backbone in the global supply chain.</h2>
         <p class="text-dim leading-relaxed max-w-2xl mx-auto text-center mb-10">
-          The Authorized Partner Program is built for system integrators who need more than a
-          vendor relationship — protected margins, a white-label-ready product, and qualified leads
-          in your territory.
+          The Authorized Partner Program supports system integrators and distributors with coordinated commercial, OEM, integration, and export capabilities.
         </p>
         <div class="grid sm:grid-cols-2 gap-6">
           <div class="border border-line-soft p-6">
-            <h3 class="font-display font-bold text-base mb-2">High Margins, Protected Pricing</h3>
-            <p class="text-sm text-dim leading-relaxed">Competitive ex-factory pricing supports integrator profitability at every tier, with minimum advertised pricing enforced across territories.</p>
+            <h3 class="font-display font-bold text-base mb-2">Commercial Support</h3>
+            <p class="text-sm text-dim leading-relaxed">Partner-oriented pricing and commercial coordination are available based on territory, configuration, and project scope.</p>
           </div>
           <div class="border border-line-soft p-6">
-            <h3 class="font-display font-bold text-base mb-2">White-Label &amp; OEM Ready</h3>
-            <p class="text-sm text-dim leading-relaxed">Full OEM support to launch under your own brand — custom enclosures, HMI skins, documentation, and packaging.</p>
+            <h3 class="font-display font-bold text-base mb-2">OEM &amp; Private Label</h3>
+            <p class="text-sm text-dim leading-relaxed">Selected configurations can support partner branding, documentation, packaging, and interface requirements.</p>
           </div>
           <div class="border border-line-soft p-6">
-            <h3 class="font-display font-bold text-base mb-2">Open Integration Architecture</h3>
-            <p class="text-sm text-dim leading-relaxed">Documented integration interfaces, ROS2 compatibility, and a dedicated technical support line for partner engineers — no black boxes.</p>
+            <h3 class="font-display font-bold text-base mb-2">Integration Support</h3>
+            <p class="text-sm text-dim leading-relaxed">Product information and technical communication help partner engineers assess interfaces and application requirements.</p>
           </div>
           <div class="border border-line-soft p-6">
-            <h3 class="font-display font-bold text-base mb-2">Qualified Local Lead Sharing</h3>
-            <p class="text-sm text-dim leading-relaxed">Authorized partners in select territories, including Mexico, Poland, and Southeast Asia, receive referrals from our regional marketing campaigns.</p>
+            <h3 class="font-display font-bold text-base mb-2">Export &amp; Market Support</h3>
+            <p class="text-sm text-dim leading-relaxed">Export documentation, shipping coordination, and selected market support help international partners move projects forward.</p>
           </div>
         </div>
         <div class="grid sm:grid-cols-3 gap-6 mt-6">
           <div class="border-t border-line-soft pt-5">
+            <svg class="w-7 h-7 text-teal mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 0 0-5-5l2.1 2.1-2.8 2.8-2.1-2.1a4 4 0 0 0 5 5L20 17.2a2 2 0 0 1-2.8 2.8l-8.1-8.1a4 4 0 0 0-5-5l2.1 2.1-2.8 2.8-2.1-2.1"/></svg>
             <h3 class="font-display font-bold text-sm mb-2">Rapid Prototyping</h3>
-            <p class="text-sm text-dim leading-relaxed">Custom configurations quoted and built in under 3 weeks.</p>
+            <p class="text-sm text-dim leading-relaxed">Custom configuration planning based on project scope and component availability.</p>
           </div>
           <div class="border-t border-line-soft pt-5">
+            <svg class="w-7 h-7 text-teal mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2.5" y="3" width="6" height="5" rx="1"/><rect x="15.5" y="3" width="6" height="5" rx="1"/><rect x="9" y="16" width="6" height="5" rx="1"/><path stroke-linecap="round" stroke-linejoin="round" d="M5.5 8v3h13V8M12 11v5"/></svg>
             <h3 class="font-display font-bold text-sm mb-2">Vertical Integration</h3>
-            <p class="text-sm text-dim leading-relaxed">In-house mechanical, electrical, and software teams under one roof.</p>
+            <p class="text-sm text-dim leading-relaxed">Mechanical, electrical, and control requirements coordinated through one project contact.</p>
           </div>
           <div class="border-t border-line-soft pt-5">
+            <svg class="w-7 h-7 text-teal mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path stroke-linecap="round" d="M5 3h7M2 10h5"/></svg>
             <h3 class="font-display font-bold text-sm mb-2">Global Logistics</h3>
             <p class="text-sm text-dim leading-relaxed">Export documentation and shipping coordination for international partner orders.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 border-b border-black/10">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-[1.1fr_.9fr] gap-8 items-center">
+      <div>
+        <div class="font-mono text-xs tracking-[0.2em] text-teal mb-3">WHO WE WORK WITH</div>
+        <h2 class="font-display font-bold text-2xl mb-3">Built for integrators, distributors, and industrial partners.</h2>
+        <p class="text-black/60 leading-relaxed">Yeld Tech Welding supports automation companies that integrate, import, or resell cobot welding equipment while partners retain the end-customer application relationship.</p>
+      </div>
+      <div class="grid gap-3 font-mono text-xs tracking-wider text-black/60">
+        <div class="border-t border-black/15 pt-3">SYSTEM INTEGRATORS</div>
+        <div class="border-t border-black/15 pt-3">WELDING EQUIPMENT DISTRIBUTORS</div>
+        <div class="border-t border-black/15 pt-3">OEM / PRIVATE-LABEL PARTNERS</div>
       </div>
     </div>
   </section>
@@ -310,9 +333,7 @@
       </div>
       <div class="bg-white border border-black/10">
         <figure class="bg-black/5 aspect-square flex items-center justify-center p-6">
-          <div class="w-full h-full border border-dashed border-black/20 flex items-center justify-center text-center px-3">
-            <span class="font-mono text-[11px] text-black/40">VISION PRODUCTS<br>PHOTO PLACEHOLDER</span>
-          </div>
+          <img src="../images/Vision-welding.png" alt="Vision system for robotic welding seam tracking and part location" class="max-h-full w-auto object-contain" loading="lazy">
         </figure>
         <div class="p-5">
           <h3 class="font-display font-bold text-sm mb-2">Vision Products</h3>
@@ -321,9 +342,7 @@
       </div>
       <div class="bg-white border border-black/10">
         <figure class="bg-black/5 aspect-square flex items-center justify-center p-6">
-          <div class="w-full h-full border border-dashed border-black/20 flex items-center justify-center text-center px-3">
-            <span class="font-mono text-[11px] text-black/40">CONSUMABLES<br>PHOTO PLACEHOLDER</span>
-          </div>
+          <img src="../images/contact-tips.png" alt="Welding torch contact tips and consumables" class="max-h-full w-auto object-contain" loading="lazy">
         </figure>
         <div class="p-5">
           <h3 class="font-display font-bold text-sm mb-2">Consumables</h3>
@@ -331,7 +350,6 @@
         </div>
       </div>
     </div>
-    <p class="font-mono text-[11px] text-black/40 mt-6 text-center">Vision and consumables photos are placeholders — send real product photos and I'll swap them in.</p>
   </section>
 
   <section id="quote" class="max-w-2xl mx-auto px-6 py-20 text-center">
@@ -419,7 +437,6 @@
 <script src="/site.js" defer></script>
 </body>
 </html>
-
 
 
 

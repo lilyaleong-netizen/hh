@@ -1,6 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGQXC8XD8Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SGQXC8XD8Q');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Robot Controller Retrofit for KUKA & ABB | 1/3 the Cost of OEM Replacement | HH Industrial</title>
@@ -61,11 +69,11 @@
         <a href="/" class="hover:text-orange transition">HOME</a>
 
         <div class="nav-item relative py-2 flex items-center">
-          <a href="/robot-retrofit/" class="hover:text-orange transition">ROBOT RETROFIT</a>
+          <a href="/robot-retrofit/" class="text-orange transition">ROBOT RETROFIT</a>
           <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button>
           <div id="retrofit-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[220px]">
             <a href="/robot-retrofit/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Controller Retrofit</a>
-            <a href="/robot-retrofit/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Retrofit Cabinet</a>
+            <a href="/robot-retrofit/inexbot-motion-control.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Motion Control</a>
             <a href="/robot-retrofit/#abb" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">ABB Retrofit</a>
             <a href="/robot-retrofit/#kuka" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">KUKA Retrofit</a>
           </div>
@@ -79,9 +87,10 @@
           </div>
         </div>
 
-        <div class="nav-item relative py-2">
-          <a href="/cnc-automation-components/electrode-gripper.html" class="hover:text-orange transition">CNC COMPONENTS ▾</a>
-          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+        <div class="nav-item relative py-2 flex items-center">
+          <a href="/cnc-automation-components/electrode-gripper.html" class="hover:text-orange transition">CNC COMPONENTS</a>
+          <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="cnc-menu" aria-label="Toggle CNC Components menu">▾</button>
+          <div id="cnc-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/cnc-automation-components/electrode-gripper.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">CNC Gripper</a>
           </div>
         </div>
@@ -109,8 +118,8 @@
       <div class="grid gap-4">
         <a href="/">HOME</a>
         <div class="nav-item">
-          <div class="flex items-center justify-between"><a href="/robot-retrofit/">ROBOT RETROFIT</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button></div>
-          <div id="mobile-retrofit-menu" class="dropdown bg-panel py-2"><a href="/robot-retrofit/" class="block px-4 py-2">Controller Retrofit</a><a href="/robot-retrofit/" class="block px-4 py-2">Retrofit Cabinet</a><a href="/robot-retrofit/#abb" class="block px-4 py-2">ABB Retrofit</a><a href="/robot-retrofit/#kuka" class="block px-4 py-2">KUKA Retrofit</a></div>
+          <div class="flex items-center justify-between"><a href="/robot-retrofit/" class="text-orange">ROBOT RETROFIT</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button></div>
+          <div id="mobile-retrofit-menu" class="dropdown bg-panel py-2"><a href="/robot-retrofit/" class="block px-4 py-2">Controller Retrofit</a><a href="/robot-retrofit/inexbot-motion-control.html" class="block px-4 py-2">Motion Control</a><a href="/robot-retrofit/#abb" class="block px-4 py-2">ABB Retrofit</a><a href="/robot-retrofit/#kuka" class="block px-4 py-2">KUKA Retrofit</a></div>
         </div>
         <div class="nav-item">
           <div class="flex items-center justify-between"><a href="/yeld-tech-welding/">WELDING</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-welding-menu" aria-label="Toggle Welding menu">▾</button></div>
@@ -161,6 +170,7 @@
         <div class="text-dim text-xs mt-1 leading-snug">Remote Response Target</div>
       </div>
     </div>
+    <p class="max-w-3xl mx-auto px-6 mt-6 text-center text-[11px] font-mono text-dim/80">Reference values; actual savings depend on robot condition, controller architecture and project scope.</p>
   </section>
 
   <!-- ============ WHY RETROFIT ============ -->
@@ -169,6 +179,9 @@
     <h2 class="font-display font-bold text-3xl text-center mb-5">Why Retrofit Instead of Replace?</h2>
     <p class="text-black/70 leading-relaxed max-w-3xl mx-auto text-center mb-12">
       If the robot mechanics are still in good condition, replacing the entire robot may not be the most practical option. A controller retrofit can preserve the value of the existing mechanical asset while addressing obsolete electronics, unsupported controllers and costly legacy spare parts.
+    </p>
+    <p class="text-black/70 leading-relaxed max-w-3xl mx-auto text-center mb-12">
+      Controller retrofit is most suitable when the robot arm remains mechanically serviceable but the original controller, drives, teach pendant or spare parts are obsolete or difficult to maintain.
     </p>
     <div class="grid sm:grid-cols-3 gap-8">
       <div class="bg-white p-8 border border-black/10">
@@ -189,23 +202,23 @@
   <!-- ============ BENEFITS OVER PHOTO ============ -->
   <section class="benefits-bg text-light py-20">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4 text-center">RETROFIT CAPABILITY</div>
+      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4 text-center">WHAT HH INDUSTRIAL DELIVERS</div>
       <div class="grid sm:grid-cols-4 gap-8 text-center">
         <div>
-          <div class="font-display font-bold text-lg mb-2">Legacy Platform Assessment</div>
-          <p class="text-sm text-dim leading-relaxed">Controller and robot platform evaluation before a retrofit path is confirmed.</p>
+          <div class="font-display font-bold text-lg mb-2">Robot and Controller Assessment</div>
+          <p class="text-sm text-dim leading-relaxed">Evaluate the robot model, existing controller, motors, feedback system, safety architecture and application requirements before confirming the retrofit path.</p>
         </div>
         <div>
-          <div class="font-display font-bold text-lg mb-2">Modern Control &amp; Integration</div>
-          <p class="text-sm text-dim leading-relaxed">Updated control, safety, I/O, EtherCAT and PROFINET communication interfaces.</p>
+          <div class="font-display font-bold text-lg mb-2">Retrofit Cabinet Configuration</div>
+          <p class="text-sm text-dim leading-relaxed">Configure the retrofit control cabinet around the specific robot platform and project requirements.</p>
         </div>
         <div>
-          <div class="font-display font-bold text-lg mb-2">Wiring &amp; Cabinet Adaptation</div>
-          <p class="text-sm text-dim leading-relaxed">Cabinet configuration and wiring adaptation according to the robot platform and application requirements.</p>
+          <div class="font-display font-bold text-lg mb-2">Wiring and Interface Adaptation</div>
+          <p class="text-sm text-dim leading-relaxed">Evaluate and adapt robot wiring, feedback, I/O, safety circuits and external interfaces as required by the selected retrofit architecture.</p>
         </div>
         <div>
-          <div class="font-display font-bold text-lg mb-2">Integrator Engineering Support</div>
-          <p class="text-sm text-dim leading-relaxed">English technical communication, documentation and engineering coordination throughout the retrofit process.</p>
+          <div class="font-display font-bold text-lg mb-2">Technical Documentation and Integrator Support</div>
+          <p class="text-sm text-dim leading-relaxed">Provide technical communication, documentation and engineering coordination for overseas automation partners.</p>
         </div>
       </div>
     </div>
@@ -218,12 +231,11 @@
     <div class="grid sm:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
       <div>
         <p class="text-black/70 leading-relaxed">
-          A robot controller retrofit cabinet replaces an outdated or unsupported controller while
-          retaining a mechanically serviceable robot arm. The retrofit can modernize motion control,
-          safety circuits, I/O, and industrial communication while improving long-term component
-          availability. Cabinet configuration and wiring adaptation are evaluated for each robot platform.
+          An industrial robot controller retrofit replaces an obsolete control system while retaining a mechanically serviceable robot arm. A retrofit cabinet is configured around the robot's motors, feedback system, wiring, safety architecture and application interfaces. It provides the cabinet configuration, wiring adaptation and industrial communication integration required to return an aging robot to service.
         </p>
-        <div class="mt-5 font-mono text-xs tracking-widest text-orange">CORE COMPONENT: iNEXBOT MOTION CONTROL &amp; DRIVE</div>
+        <div class="mt-5 font-mono text-xs tracking-widest text-orange">MOTION-CONTROL FOUNDATION</div>
+        <p class="text-sm text-black/60 leading-relaxed mt-2">Selected HH Industrial retrofit cabinet configurations are built around the Inexbot Motion Control System, providing the motion, logic and communication layer required for modern robot control.</p>
+        <a href="../inexbot-motion-control.html" class="inline-block mt-4 font-mono text-xs tracking-widest text-orange border-b border-orange pb-1 hover:text-ink hover:border-ink transition">Explore the Motion Control System →</a>
       </div>
       <figure class="bg-white border border-black/10 p-3">
         <img src="retrofit-cabinet-inside.png" alt="Inside view of the YQ04L industrial robot retrofit control cabinet showing servo drive modules and wiring" class="w-full h-auto object-cover" loading="lazy">
@@ -234,23 +246,23 @@
     <div class="mt-12 grid sm:grid-cols-3 gap-6">
       <div class="bg-white p-6 border border-black/10">
         <div class="font-mono text-xs text-orange mb-3">MODULAR CONTROL</div>
-        <h3 class="font-display font-bold text-lg mb-2">Multi-Axis Drive Architecture</h3>
-        <p class="text-sm text-black/60 leading-relaxed">The YQ04L reference platform uses configurable integrated servo drive modules for 2-6 axes, with optional auxiliary-axis support.</p>
+        <h3 class="font-display font-bold text-lg mb-2">Robot-Specific Control Configuration</h3>
+        <p class="text-sm text-black/60 leading-relaxed">The reference cabinet is configured around the robot axes, motors, feedback and application requirements.</p>
       </div>
       <div class="bg-white p-6 border border-black/10">
         <div class="font-mono text-xs text-orange mb-3">COMMUNICATION</div>
-        <h3 class="font-display font-bold text-lg mb-2">Modern Industrial Interfaces</h3>
-        <p class="text-sm text-black/60 leading-relaxed">Core <strong class="text-teal">EtherCAT</strong> and <strong class="text-teal">PROFINET</strong> support connects current PLC, I/O, and vision environments. Documented options also include CANopen, EtherNet/IP, OPC UA, and other fieldbus interfaces by configuration.</p>
+        <h3 class="font-display font-bold text-lg mb-2">Cabinet &amp; Wiring Adaptation</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Cabinet layout, field wiring, safety, I/O and peripheral interfaces are evaluated for the selected robot platform.</p>
       </div>
       <div class="bg-white p-6 border border-black/10">
         <div class="font-mono text-xs text-orange mb-3">ENGINEERING ACCESS</div>
-        <h3 class="font-display font-bold text-lg mb-2">Open Development Options</h3>
-        <p class="text-sm text-black/60 leading-relaxed">Open software interfaces support HMI and process customization, with documented development options including C/C++, Lua, Python, MATLAB/Simulink, IEC 61131, and ROS workflows.</p>
+        <h3 class="font-display font-bold text-lg mb-2">Modern Communication Integration</h3>
+        <p class="text-sm text-black/60 leading-relaxed">Industrial communication interfaces such as <strong class="text-teal">EtherCAT</strong> and <strong class="text-teal">PROFINET</strong> can connect the retrofit to current PLC, I/O and production environments.</p>
       </div>
     </div>
     <div class="mt-6 border-l-2 border-orange pl-5 max-w-3xl">
-      <h3 class="font-display font-bold text-lg mb-2">Motion, Vision &amp; Process Extensions</h3>
-      <p class="text-sm text-black/60 leading-relaxed">The core control component is the <strong>iNexBot Motion Control platform and Drive</strong>, combining logic and motion control with optional vision and process functions. Documented capabilities include 2D/3D hand-eye calibration, force/torque sensing support, palletizing workflows, multilingual HMI, and basic remote diagnostics. Availability depends on the selected software and hardware configuration.</p>
+      <h3 class="font-display font-bold text-lg mb-2">Technical Scope</h3>
+      <p class="text-sm text-black/60 leading-relaxed">Final electrical, motion and interface specifications depend on the robot model, motors, feedback, wiring, safety and application load. Detailed motion-control architecture is covered in the <a href="../inexbot-motion-control.html" class="text-orange hover:underline">Motion Control System reference</a>.</p>
     </div>
 
     <div class="mt-14">
@@ -289,7 +301,7 @@
 
     <div class="mt-14 border-t border-black/10 pt-10">
       <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">RETROFIT APPLICATIONS</div>
-      <h3 class="font-display font-bold text-2xl mb-4">Where controller retrofit technology is applied.</h3>
+      <h2 class="font-display font-bold text-2xl mb-4">Robot Controller Retrofit Applications</h2>
       <p class="text-black/70 leading-relaxed max-w-2xl mb-8">
         We support integrators evaluating controller replacement for established robot applications.
         Final cell engineering, risk assessment, and site integration remain under the integrator's control.
@@ -322,7 +334,6 @@
             <figcaption class="font-mono text-[11px] text-black/40 mt-2 px-1 pb-1">Palletizing application, yard operation</figcaption>
           </figure>
         </div>
-        <p class="font-mono text-[11px] text-black/40 mt-4">Captions reflect our best read of each installation — let us know if any should be corrected.</p>
       </div>
     </div>
   </section>
@@ -351,7 +362,8 @@
       <p class="font-mono text-[11px] text-dim/70 mt-6">IRC5 second-generation and OmniCore-related environments require case-by-case technical review. Compatibility references do not imply ABB authorization or affiliation.</p>
 
       <div class="mt-10 grid sm:grid-cols-2 gap-6 items-center">
-        <a href="https://www.youtube.com/watch?v=REPLACE_WITH_VIDEO_ID" target="_blank" rel="noopener" class="group relative block bg-ink border border-line-soft overflow-hidden aspect-video">
+        <a href="https://youtube.com/shorts/sUIu70nhQXg" target="_blank" rel="noopener" class="group relative block bg-ink border border-line-soft overflow-hidden aspect-video">
+          <img src="../images/retrofit-abb-wire.jpg" alt="ABB robot retrofit cabinet wiring" class="absolute inset-0 w-full h-full object-contain" loading="lazy">
           <div class="absolute inset-0 flex items-center justify-center">
             <div class="w-14 h-14 rounded-full bg-orange/90 flex items-center justify-center group-hover:brightness-110 transition">
               <svg viewBox="0 0 24 24" class="w-6 h-6 ml-0.5" fill="var(--ink)"><path d="M8 5v14l11-7z"/></svg>
@@ -407,7 +419,8 @@
       <p class="font-mono text-[11px] text-black/40 mt-6">Final support depends on the exact KUKA robot, KRC generation, installed options, and machine condition. Compatibility references do not imply KUKA authorization or affiliation.</p>
 
       <div class="mt-10 grid sm:grid-cols-2 gap-6 items-center">
-        <a href="https://www.youtube.com/watch?v=REPLACE_WITH_VIDEO_ID" target="_blank" rel="noopener" class="group relative block bg-ink border border-black/10 overflow-hidden aspect-video">
+        <a href="https://youtube.com/shorts/Adq7qMazitM" target="_blank" rel="noopener" class="group relative block bg-ink border border-black/10 overflow-hidden aspect-video">
+          <img src="../images/retrofit-kuka-wire.jpg" alt="KUKA robot retrofit cabinet wiring" class="absolute inset-0 w-full h-full object-contain" loading="lazy">
           <div class="absolute inset-0 flex items-center justify-center">
             <div class="w-14 h-14 rounded-full bg-orange/90 flex items-center justify-center group-hover:brightness-110 transition">
               <svg viewBox="0 0 24 24" class="w-6 h-6 ml-0.5" fill="var(--ink)"><path d="M8 5v14l11-7z"/></svg>
@@ -470,6 +483,8 @@
       <div><h3 class="font-display font-semibold mb-2">What information is required for an industrial robot retrofit quotation?</h3><p class="text-sm text-black/60">Please provide the robot brand and model, payload, manufacturing year, existing controller model, serial number if available, application type, motor and encoder information, and clear photos of the robot nameplate and control cabinet. Electrical drawings and technical documents can shorten the compatibility review and quotation process. <a href="#quote" class="text-orange font-semibold hover:underline">Request a retrofit evaluation</a>.</p></div>
       <div><h3 class="font-display font-semibold mb-2">Can a retrofitted industrial robot be used for robotic welding?</h3><p class="text-sm text-black/60">Yes, subject to technical evaluation. Robot controller retrofit solutions can support <strong>robotic welding, material handling, machine tending and material processing</strong>. A welding project also requires evaluation of the welding power source, torch, positioner, safety equipment, fieldbus interfaces and other peripherals.</p></div>
       <div><h3 class="font-display font-semibold mb-2">Why choose HH Industrial for a robot controller retrofit project?</h3><p class="text-sm text-black/60">HH Industrial combines industrial robot application knowledge, responsive engineering communication, China-based manufacturing resources and international project experience. We help automation partners evaluate compatibility, coordinate retrofit-related technology and reduce the complexity of sourcing from China, while leaving local installation and system integration to your engineering team or chosen integrator. <a href="#quote" class="text-orange font-semibold hover:underline">Discuss your robot retrofit project with an engineer</a>.</p></div>
+      <div><h3 class="font-display font-semibold mb-2">What is included in a robot controller retrofit cabinet?</h3><p class="text-sm text-black/60">The scope is defined by the robot model and application, and may include the replacement controller, servo and feedback interfaces, safety circuits, I/O, cabinet wiring adaptation, industrial communication and technical documentation.</p></div>
+      <div><h3 class="font-display font-semibold mb-2">How do I know whether an old robot is suitable for controller retrofit?</h3><p class="text-sm text-black/60">Suitability depends on the mechanical condition of the robot arm, controller generation, motors, feedback system, wiring, safety architecture and application requirements. Share the model and available technical information for an evaluation.</p></div>
     </div>
   </section>
 
@@ -481,7 +496,7 @@
 
       <!-- FORM BACKEND: Web3Forms — replace access_key before publishing -->
       <form action="https://api.web3forms.com/submit" method="POST" class="grid sm:grid-cols-2 gap-4 text-left">
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="access_key" value="66b62667-4daa-4650-a2d6-c97d8010fbdd">
         <input type="hidden" name="subject" value="New quote request — Robot Retrofit">
         <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
         <div>
@@ -562,7 +577,3 @@
 <script src="/site.js" defer></script>
 </body>
 </html>
-
-
-
-

@@ -31,6 +31,12 @@ textarea:focus-visible {
 
 .dropdown-toggle[aria-expanded="true"] { color: var(--orange); }
 
+header nav.hidden.md\:flex > a:hover,
+header nav.hidden.md\:flex > .nav-item > a:hover,
+header nav.hidden.md\:flex > .nav-item > .dropdown-toggle:hover {
+  color: var(--orange);
+}
+
 @media (max-width: 767px) {
   .mobile-menu .dropdown {
     position: static;

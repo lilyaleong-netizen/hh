@@ -1,6 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGQXC8XD8Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SGQXC8XD8Q');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Used Robots & Spare Parts — Teach Pendants, Motors, Reducers | HH Industrial</title>
@@ -24,6 +32,23 @@
   .bg-orange{background-color:var(--orange);}
   .border-line-soft{border-color:var(--line-soft);}
   .text-dim{color:var(--text-dim);} .text-light{color:var(--text-light);}
+  .resources-hero{
+    background-image:
+      linear-gradient(rgba(20,24,28,.82), rgba(20,24,28,.82)),
+      url('../images/used-robot-hero.png');
+    background-size:100% auto;
+    background-position:center;
+    background-repeat:no-repeat;
+    aspect-ratio:444 / 139;
+    display:flex;
+    align-items:center;
+  }
+  @media (max-width:640px){
+    .resources-hero{
+      aspect-ratio:auto;
+      background-size:auto 100%;
+    }
+  }
 </style>
 </head>
 <body class="antialiased">
@@ -43,7 +68,7 @@
           <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button>
           <div id="retrofit-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[220px]">
             <a href="/robot-retrofit/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Controller Retrofit</a>
-            <a href="/robot-retrofit/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Retrofit Cabinet</a>
+            <a href="/robot-retrofit/inexbot-motion-control.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Motion Control</a>
             <a href="/robot-retrofit/#abb" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">ABB Retrofit</a>
             <a href="/robot-retrofit/#kuka" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">KUKA Retrofit</a>
           </div>
@@ -57,15 +82,16 @@
           </div>
         </div>
 
-        <div class="nav-item relative py-2">
-          <a href="/cnc-automation-components/electrode-gripper.html" class="hover:text-orange transition">CNC COMPONENTS ▾</a>
-          <div class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
+        <div class="nav-item relative py-2 flex items-center">
+          <a href="/cnc-automation-components/electrode-gripper.html" class="hover:text-orange transition">CNC COMPONENTS</a>
+          <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="cnc-menu" aria-label="Toggle CNC Components menu">▾</button>
+          <div id="cnc-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/cnc-automation-components/electrode-gripper.html" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">CNC Gripper</a>
           </div>
         </div>
 
         <div class="nav-item relative py-2 flex items-center">
-          <a href="/used-robots-parts/" class="hover:text-orange transition">ROBOT RESOURCES</a>
+          <a href="/used-robots-parts/" class="text-orange transition">ROBOT RESOURCES</a>
           <button type="button" class="dropdown-toggle hover:text-orange transition" data-dropdown-toggle aria-expanded="false" aria-controls="resources-menu" aria-label="Toggle Robot Resources menu">▾</button>
           <div id="resources-menu" class="dropdown absolute top-full left-0 bg-panel border border-line-soft py-2 min-w-[200px]">
             <a href="/used-robots-parts/" class="block px-4 py-2 hover:text-orange hover:bg-ink transition">Used Industrial Robots</a>
@@ -88,7 +114,7 @@
         <a href="/">HOME</a>
         <div class="nav-item">
           <div class="flex items-center justify-between"><a href="/robot-retrofit/">ROBOT RETROFIT</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-retrofit-menu" aria-label="Toggle Robot Retrofit menu">▾</button></div>
-          <div id="mobile-retrofit-menu" class="dropdown bg-panel py-2"><a href="/robot-retrofit/" class="block px-4 py-2">Controller Retrofit</a><a href="/robot-retrofit/" class="block px-4 py-2">Retrofit Cabinet</a><a href="/robot-retrofit/#abb" class="block px-4 py-2">ABB Retrofit</a><a href="/robot-retrofit/#kuka" class="block px-4 py-2">KUKA Retrofit</a></div>
+          <div id="mobile-retrofit-menu" class="dropdown bg-panel py-2"><a href="/robot-retrofit/" class="block px-4 py-2">Controller Retrofit</a><a href="/robot-retrofit/inexbot-motion-control.html" class="block px-4 py-2">Motion Control</a><a href="/robot-retrofit/#abb" class="block px-4 py-2">ABB Retrofit</a><a href="/robot-retrofit/#kuka" class="block px-4 py-2">KUKA Retrofit</a></div>
         </div>
         <div class="nav-item">
           <div class="flex items-center justify-between"><a href="/yeld-tech-welding/">WELDING</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-welding-menu" aria-label="Toggle Welding menu">▾</button></div>
@@ -96,7 +122,7 @@
         </div>
         <a href="/cnc-automation-components/electrode-gripper.html">CNC COMPONENTS</a>
         <div class="nav-item">
-          <div class="flex items-center justify-between"><a href="/used-robots-parts/">ROBOT RESOURCES</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-resources-menu" aria-label="Toggle Robot Resources menu">▾</button></div>
+          <div class="flex items-center justify-between"><a href="/used-robots-parts/" class="text-orange">ROBOT RESOURCES</a><button type="button" class="dropdown-toggle" data-dropdown-toggle aria-expanded="false" aria-controls="mobile-resources-menu" aria-label="Toggle Robot Resources menu">▾</button></div>
           <div id="mobile-resources-menu" class="dropdown bg-panel py-2"><a href="/used-robots-parts/" class="block px-4 py-2">Used Industrial Robots</a><a href="/used-robots-parts/" class="block px-4 py-2">Spare Parts</a></div>
         </div>
         <a href="#footer-contact">CONTACT</a>
@@ -104,13 +130,12 @@
     </nav>
   </header>
 
-  <section class="bg-ink text-light py-20">
+  <section class="resources-hero bg-ink text-light py-20">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">FAST TURNAROUND · MODEL-MATCHED PARTS</div>
-      <h1 class="font-display font-extrabold text-4xl leading-tight mb-6">Down machine? Find your part fast.</h1>
+      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4">USED ROBOTS · ROBOT SPARE PARTS · ENGINEERING SUPPORT</div>
+      <h1 class="font-display font-extrabold text-4xl leading-tight mb-6">The Right Robot or Part, Matched to Your Requirement.</h1>
       <p class="text-dim text-lg leading-relaxed max-w-2xl mx-auto">
-        Teach pendants, servo motors, reducers, and inspected used robot arms — sourced and
-        matched to your exact model, with lead time and stock status confirmed before you buy.
+        We support automation integrators, robot refurbishers and dealers with inspected used robots and model-matched spare parts — backed by technical selection, sourcing capabilities and export coordination from China.
       </p>
     </div>
   </section>
@@ -126,13 +151,13 @@
       <div class="font-mono text-xs tracking-[0.2em] text-orange mb-3">BRANDS AVAILABLE</div>
       <h2 class="font-display font-bold text-2xl mb-8">Robot brands we can source.</h2>
       <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4">
-        <div class="aspect-square rounded-full border border-black/15 bg-white flex items-center justify-center p-3 text-center font-display font-bold text-sm">FANUC</div>
-        <div class="aspect-square rounded-full border border-black/15 bg-white flex items-center justify-center p-3 text-center font-display font-bold text-sm">ABB</div>
-        <div class="aspect-square rounded-full border border-black/15 bg-white flex items-center justify-center p-3 text-center font-display font-bold text-sm">KUKA</div>
-        <div class="aspect-square rounded-full border border-black/15 bg-white flex items-center justify-center p-3 text-center font-display font-bold text-sm">Yaskawa</div>
-        <div class="aspect-square rounded-full border border-black/15 bg-white flex items-center justify-center p-3 text-center font-display font-bold text-xs">OTC / Daihen</div>
-        <div class="aspect-square rounded-full border border-black/15 bg-white flex items-center justify-center p-3 text-center font-display font-bold text-sm">Kawasaki</div>
-        <div class="aspect-square rounded-full border border-black/15 bg-white flex items-center justify-center p-3 text-center font-display font-bold text-sm">Panasonic</div>
+        <div class="aspect-square rounded-full border border-black/10 bg-[#F3F0EA] flex items-center justify-center p-3 text-center font-display font-bold text-sm text-black/80">FANUC</div>
+        <div class="aspect-square rounded-full border border-black/10 bg-[#F3F0EA] flex items-center justify-center p-3 text-center font-display font-bold text-sm text-black/80">ABB</div>
+        <div class="aspect-square rounded-full border border-black/10 bg-[#F3F0EA] flex items-center justify-center p-3 text-center font-display font-bold text-sm text-black/80">KUKA</div>
+        <div class="aspect-square rounded-full border border-black/10 bg-[#F3F0EA] flex items-center justify-center p-3 text-center font-display font-bold text-sm text-black/80">Yaskawa</div>
+        <div class="aspect-square rounded-full border border-black/10 bg-[#F3F0EA] flex items-center justify-center p-3 text-center font-display font-bold text-sm text-black/80">OTC</div>
+        <div class="aspect-square rounded-full border border-black/10 bg-[#F3F0EA] flex items-center justify-center p-3 text-center font-display font-bold text-sm text-black/80">Kawasaki</div>
+        <div class="aspect-square rounded-full border border-black/10 bg-[#F3F0EA] flex items-center justify-center p-3 text-center font-display font-bold text-sm text-black/80">Panasonic</div>
       </div>
     </div>
 
@@ -161,11 +186,11 @@
 
   <section class="bg-ink text-light py-20">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4 text-center">WHY WORK WITH US</div>
+      <div class="font-mono text-xs tracking-[0.2em] text-orange mb-4 text-center">WHY CHOOSE US</div>
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="border border-line-soft p-8"><h3 class="font-display font-bold text-lg mb-3">Engineering-Based Selection</h3><p class="text-sm text-dim leading-relaxed">We look beyond model numbers, considering application, payload, reach, controller and integration requirements.</p></div>
-        <div class="border border-line-soft p-8"><h3 class="font-display font-bold text-lg mb-3">Fast Resource Matching</h3><p class="text-sm text-dim leading-relaxed">Our sourcing network in China helps us quickly check available robots, parts and suitable alternatives.</p></div>
-        <div class="border border-line-soft p-8"><h3 class="font-display font-bold text-lg mb-3">Technical &amp; Export Support</h3><p class="text-sm text-dim leading-relaxed">Clear technical communication, product information, photos and export coordination for overseas automation partners.</p></div>
+        <div class="border border-line-soft p-8"><h3 class="font-display font-bold text-lg mb-3">Engineering-Based Selection</h3><p class="text-sm text-dim leading-relaxed">We look beyond the model number. Application, payload, reach, controller, configuration and integration requirements are considered before recommending a robot or part.</p></div>
+        <div class="border border-line-soft p-8"><h3 class="font-display font-bold text-lg mb-3">Resource Matching</h3><p class="text-sm text-dim leading-relaxed">Our China-based sourcing network helps us identify available robots, parts and suitable alternatives across multiple suppliers — without requiring you to manage each source yourself.</p></div>
+        <div class="border border-line-soft p-8"><h3 class="font-display font-bold text-lg mb-3">Technical &amp; Export Support</h3><p class="text-sm text-dim leading-relaxed">We provide clear technical communication, product information, photos, condition details and export coordination — helping overseas automation partners move from requirement to purchase with fewer sourcing uncertainties.</p></div>
       </div>
     </div>
   </section>
@@ -253,8 +278,3 @@
 <script src="/site.js" defer></script>
 </body>
 </html>
-
-
-
-
-
